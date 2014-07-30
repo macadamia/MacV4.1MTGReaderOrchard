@@ -1,0 +1,1132 @@
+/* The resulting tree is grown from the that point */
+/* Hopefully to allow tuning of parameters */
+
+#include "lpfgall.h"
+#include <stdio.h> 
+#include <string.h>
+#include <time.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#ifdef _MSC_VER
+	#include <float.h>
+#endif
+// for dictionay type stuff
+#include <map>
+
+using namespace std;
+using std::max;
+using std::min;
+
+#include "env.hpp"
+#include "parameters.inc"
+#include "extra.hpp"
+#include "quaternion.hpp"
+#include "datastruc.inc"
+#include "mapBranches.hpp"
+#include "MTGWriter.hpp"
+
+
+/* modules */
+module TreeReader();			// Reads the MTG
+module Seed();				// Initial module -- immediately replaced by roots and shoot
+module Roots();				// Represents roots -- merely a marker of the bottom of the string at this point
+module Internode(InternodeData);	// An internode
+module Bud(BudData);	
+module PruneCap(float);			// Represents a pruned branch's width so the pipe model doesn't shrink branches
+module Leaf(LeafData);			// Leaf NW 20 June 2011
+
+
+module Parab(V3f,float, float); //Paraboloid canopy  Starting location, width, height
+
+module Box(bool); //draws a box around the lightmodel // NW Nov 10
+
+/* Ignore rotations, Cut (for pruning), SetTropismDirection3f (for tropisms) */
+ignore: Left Right RotateXYZ RotateHLU RollL RollR Up Down SetTropismDirection3f SetHead MoveTo3f;
+
+/* Phases */
+#define READ 0				// Reads the preexisting Structure
+#define ADJUSTWIDTH 1 // widths are generally missing this will adjust the width from the main stem upwards
+#define GROW 2				// Develops the structure
+#define INTERPRET_POSITIONS 3		// Place GetPos after every module
+#define SET_POSITIONS 4			// Interpret the GetPos and use the location-specific data to update the shadow map
+#define BHACCUMULATE 5			// Compute light at each bud and accumulate to the base, computing BH "demand" parameter
+#define BHDISTRIBUTE 6			// Distribute vigor to each bud, allocating using "demand" parameter
+#define PRUNE 7				// Prune branches with too little vigor (from the outside in)
+
+// NW Nov 10
+float maxHt; //max height of tree at end of SET_POSITIONS
+float minZ, maxZ, minX, maxX, maxWidthZ, maxWidthX; //to get the width of the canopy and the ellipticalness
+//NW Aug 2012
+V3f Location; //coordinates of first branching point
+float firstBranch ; //height of first branch point
+float miny, maxy, minx,maxx,minz,maxz; // for sensors
+float idwidth; // width of first node on main stem
+int nPruned; // number of entities pruned during PRUNE step
+int tPruned; // total entities pruned over the simulation
+
+//set by MouseInsPos
+bool manPruning;
+
+// NW Nov 10 for drawing the box
+int X[4]={VOXSIZE,VOXSIZE,-VOXSIZE,-VOXSIZE};
+int Z[4]={-VOXSIZE,VOXSIZE,VOXSIZE,-VOXSIZE};
+bool outsideBox; // warning that the tree grew outsize the LightModel
+
+LightModel env(DENSITY,VOXSIZE);	//Creating an instance of the LightModel class
+
+int seed; //for random numbers
+int flushno, step, age;							// Current step (one per flush cycle), derivation step, age for lambda (flush)
+unsigned int phase;							 // Current phase
+float lambda;										 // Current lambda - controlled by INITLAM, TARGLAM
+bool PruneFlag; //NW Nov 10 - used to control aspects of pruning and showing leaves via MouseIns & MouseInsPos resp.
+
+//NW Nov 10
+
+//used to generate run times
+time_t startsec,endsec;
+
+
+float difsec;
+int totSegs; //total segments produced
+int totNodes; //production - pruning
+int totBrs; //new branches produced less pruning
+
+bool doMTG; //trigger for writing mtg and xyz file during the SET_POSITIONS phase
+FILE *XYZfile, *MTGfile;
+char fname[24], mname[24]; //becomes the xyz and mtg filename file
+char randomstring[6]; // with the help of this
+char flushlab[30];
+int lastNodeRead, highNode; //biggest node number read from MTG and current node node with continues there after
+
+#define RAN_RNG(lo, hi) ((lo) + (hi - lo) * float_rand())
+static float float_rand(void) { return rand() / (float) RAND_MAX; }
+
+//NW Nov 10
+//creates a biased random number
+int SkewRan(){
+	float r=ran(1.);
+	int rn=1;
+	if(r>0.80){rn=3;}
+	else if(r>0.60){rn=2;}
+	return rn;
+}
+
+//Create a random permutation of 1,2,3 (bud.leafIndex) rather than randomly try and pick it later on
+vector<int> getInitVector(const int& size)
+{
+	vector<int> v(size);
+	for (int i=0; i<size; ++i) v[i] = i+1;
+	random_shuffle(v.begin(), v.end());
+	return v;
+}
+
+/* things to get rid of as they are really only debug info */
+int nodeType[7];
+int nPruneCaps;
+/***************************/
+
+#define STEPS 7+FLUSHES*6 //+(XYZFLUSH>0)
+//#define STEPS 1
+derivation length: STEPS;
+Axiom: SB Box(DRAWBOX) EB SetColor(2) TreeReader; // Seed; // SetColor(31) CurrentTexture(0) TextureVCoeff(0.15) 
+ 
+Start:
+{
+	// Set up initial variables
+	time(&startsec);
+	phase = READ;
+	flushno = 0; //tracks the cycles through all stages
+	step=0; //derivation step
+	age=0;
+	lambda = INITLAM;
+	seed =time(0);
+	seed=RSEED;
+	srand (seed);
+	totSegs=0;
+	totNodes=0;
+	totBrs=0;
+	minx=999999.;
+	miny=999999.;
+	minz=999999.;
+	maxx=-999999.;
+	maxy=-999999.;
+	maxz=-999999.;
+	firstBranch=999999.;
+	Printf("Steps: %i\n",STEPS);
+	sprintf(mtgName,"%s%s",MTGDIR,MTGFILE);
+	// Set up the shadow map
+	env.setParam(SPREAD,DEPTH,STRENGTH,FADE,Ran,Vert);
+	env.initExposureMap();
+
+	tPruned=0;
+	PruneFlag=false;
+
+	manPruning=false;
+	outsideBox=false;
+	doMTG=false;
+
+	for(int i=0;i<7;i++){
+		nodeType[i]=0;
+	}
+
+}
+
+StartEach:
+{
+	step++;
+	// Depending on the current phase, we do some simple stuff:
+	// 1. BHACCUMULATE and PRUNE are Backward(), the others are Forward()
+	// 2. We only draw on phase SET_POSITIONS
+	// 3. The flushno number is incremented every time through GROW
+	UseGroup(phase);
+	switch(phase)
+	{
+	case READ:
+		Printf("READ (%i)\n",step);
+		Forward();
+		break;
+	case ADJUSTWIDTH:
+		Printf("Adjusting Widths (%i)\n",step);
+		Backward();
+		break;
+	case GROW:
+		Printf("GROW (%i)\n",step);
+		Forward();
+		flushno++;
+		break;
+
+	case INTERPRET_POSITIONS:
+		Printf("INTERPRET_POSITIONS (%i)\n",step);
+		Forward();
+		break;
+	case SET_POSITIONS:
+		Printf("SET_POSITIONS (%i)\n",step);
+		Forward();
+		maxHt=0.; //NW Nov 10
+		maxX=0.;
+		minX=99999.;
+		minZ=99999.;
+		maxZ=0.;
+		maxWidthX=0.;
+		maxWidthZ=0.;
+		nPruned=0; //NW Nov 10
+		if(doMTG){
+			Printf("\nOpening XYZ file\n");
+			if(USERANDFNAMES) {
+				sprintf(randomstring,"%s",randomString(6).c_str()); //do this once so csv and mtg have the same random name
+				sprintf(fname,"ModelXYZ_%s.csv",randomstring);
+			}
+			else {
+				sprintf(fname,"ModelXYZ.csv");
+			}
+			XYZfile=fopen(fname, "w");
+			fprintf(XYZfile, "X,Y,Z,order\n");
+	
+			Printf("\nOpening MTG file\n");
+			if(USERANDFNAMES) {
+				sprintf(mname,"ModelMTG_%s.mtg",randomstring);
+			} else {
+				sprintf(mname,"ModelMTG.mtg");
+		}
+		MTGfile=fopen(mname, "w");
+		createMTG(MTGfile, MTGstack, MTGcurOrder, MTGplantStart, MTGlatStart);
+		}
+		//DisplayFrame();
+		break;
+
+	case BHACCUMULATE:
+		Printf("BHACCUMULATE (%i)\n",step);
+		Backward();
+		break;
+	case BHDISTRIBUTE:
+		Printf("BHDISTRIBUTE (%i)\n",step);
+		Forward();
+		break;
+
+	case PRUNE:
+		nPruneCaps=0;
+		Printf("PRUNE (%i)\n",step);
+		Backward();
+		nPruned=0;
+		DisplayFrame();
+		break;
+	}
+
+}
+
+EndEach:
+{
+	// Simple phase cycle of
+	// GROW -> INTERPRET_POSITIONS -> XYZ -> SET_POSITIONS -> BHACCUMULATE -> BHDISTRIBUTE -> PRUNE -> repeat
+	switch(phase)
+	{
+	case READ:
+		phase=ADJUSTWIDTH;
+		Printf("READ phase completed\n\n");
+		break;
+	case ADJUSTWIDTH:
+		Printf("Width Adjust complete\nWidth at base is %.3f cm\n\n",idwidth);
+		phase=INTERPRET_POSITIONS;
+		DisplayFrame();
+		break;
+	case GROW:
+		if(flushno % 2 == 0 || flushno==0){age++;} 	//age is incremented on odd flushes only, except the first
+		if(age<DELAY+TRANSITION) {
+		//change in lambda over time.
+			if(age>DELAY){
+				lambda=((DELAY+TRANSITION-age)*INITLAM + (age-DELAY)*TARGLAM)/TRANSITION;
+			} else {lambda=INITLAM;}
+		} else {lambda=TARGLAM;}
+		Printf("Lambda now %.2f (step %i, age %i)\n\n",lambda,step,age);
+		Printf("Nodes %i Branches %i N:B %.1f\n",totNodes,totBrs,totNodes/(float)totBrs);
+		phase = INTERPRET_POSITIONS;
+		break;
+		
+	case INTERPRET_POSITIONS:
+		doMTG=false;
+		if(flushno==XYZFLUSH && flushno>=0){
+			doMTG=true;
+		}
+		phase=SET_POSITIONS;
+		break;
+	case SET_POSITIONS:
+		phase = BHACCUMULATE;
+		//NW Nov 10
+		Printf("Current height of plant after %i flushes is %.1f cm\n",flushno,maxHt);
+		Printf("Pruned %i entities\n",nPruned);
+		Printf("End of Growing Flush %i (year %i) (step %i)\n**************\n\n",flushno,age,step);
+		if(doMTG){
+			fclose(XYZfile);
+			Printf("Closed XYZ file\n\n");
+			fclose(MTGfile);
+			Printf("Closed MTG %s file\n\n",mname);
+			doMTG=false;
+		}
+		if(manPruning){
+			manPruning=false;
+		}
+		break;
+
+	case BHACCUMULATE:
+		phase = BHDISTRIBUTE;
+		break;
+	case BHDISTRIBUTE:
+		phase = PRUNE;
+		break;
+
+	case PRUNE:
+		phase = GROW;
+		Printf("Produced %i PruneCaps\n",nPruneCaps);
+		break;
+	}
+}
+
+End:{ //NW Nov 10
+	Printf("\nTotal Pruned %i\n",tPruned);
+	Printf("Max height of plant after %i flushes is %.1f cm\n",flushno,maxHt);
+	Printf("Height:Width %.1f\n",maxHt/max(maxWidthX,maxWidthZ));
+	Printf("Max Width of Canopy (cm) %.1f\n",max(maxWidthX,maxWidthZ));
+	Printf("Ratio of X:Z widths %.3f (%3f %3f) \n",maxWidthX/maxWidthZ,maxWidthX,maxWidthZ);
+	Printf("Final Lambda %.2f\n\n",lambda);
+	Printf("Nodes %i Branches %i N:B %.1f\n",totNodes,totBrs,totNodes/(float)totBrs);
+	Printf("Total production of Nodes %i\n",totSegs);
+	Printf("Width of base of main stem is %.2f\n",idwidth);
+	if(outsideBox){
+		Printf("\n*********************************\n");
+		Printf("	 Warning: Tree Exceeded Light Model\n");
+		Printf("\n*********************************\n");
+	}
+	Printf("\n**************\nEnd of simulation (%i steps)\n\n",step);
+	time(&endsec);
+
+	difsec=difftime(endsec,startsec);
+
+	Printf("It took %.4f seconds\n\n",difsec);
+	Printf("\n Random Number Seed: %i\n\n",seed);
+	srand (seed);
+}
+
+/* READ Phase */
+group READ:
+production:
+
+#include "TreeReader.l"
+//need to add Parab stuff back in
+	Printf("MTG had %i Nodes and %i Branches N:B %.1f\n",nn,nb,nn/(float)nb);
+	totNodes=nn;
+	totBrs=nb;
+	produce;
+}
+
+Parab(Location,width,height):{
+	float x,y,z,v;
+	float a=width/2.;
+	int n=61;
+	float m=2*PI/(float)n;
+	float sSize = min(0.5,width/200.);
+	Printf("Creating Canopy Paraboloid of width %f height %f \n",width,height);
+	nproduce MoveTo3f(Location) Sphere(2);
+	y=0.;
+	float inc=height / 30.;
+	do{
+  		for(int j=1;j<n;j++){
+					v=j*m;
+      		x=a*sqrt(y/height)*cos(v);
+      		z=a*sqrt(y/height)*sin(v);
+					//Printf("%f %f %f\n",x,y,z);
+					nproduce MoveTo(x+Location.x,y+Location.y,z+Location.z) Sphere(sSize); //
+ 		 }
+  	y=y+inc;
+	} while (y<=height);
+	produce;
+
+}
+
+group ADJUSTWIDTH:
+production:
+// rebuild widths using the Pipe Model with smallest stems set at 4 mm
+// For internodes, we have to accumulate light from all supported buds and internodes
+// We also take the opportunity to accumulate width for the pipe model
+Internode(id):
+{
+	// Initialize accumulator
+	float pipeAcc = 0.0;
+	bool moreBranches = true;			 // true if there might be more branches left
+	
+	// additional data for InNewRightContext
+	InternodeData rid;
+	BudData rbd;
+	LeafData rld;
+	float w;
+	// As long as there might be branches left, we use InNewRightContext to look for them
+
+	while(moreBranches)
+	{
+		// 1. Internode on branch:
+		if(InNewRightContext(SB Internode(rid) EB))
+		{
+			// Accumulate width for pipe model
+			pipeAcc += pow(rid.width,PIPEEXP);
+			if(SHOWPIPE)
+				Printf("(Branch) id %i rid.width %.3f (%i) pipeAcc %.3f\n",id.nodenum,rid.width,rid.nodenum,pipeAcc);
+		}
+		
+		// 2. Bud on branch:
+		else if(InNewRightContext(SB Bud(rbd) EB))
+		{
+
+		}
+		// 3. Pruned branch:
+		else if(InNewRightContext(SB PruneCap(w) EB))
+		{
+			//nothing pruned at this stage
+		}
+		// 4. Get supply of light from leaves:
+		else if(InNewRightContext(SB Leaf(rld) EB))
+		{
+		}
+		// 5. If none of these are satisfied, we're out of branches
+		else
+			moreBranches = false;
+	}
+	
+	// Now we have to do the same for whatever we're directly supporting
+	// This procedure is the same as for the branches, but demand is increased by one "main" share
+	if(InNewRightContext(Internode(rid)))
+	{
+		pipeAcc += pow(rid.width,PIPEEXP);
+		if(SHOWPIPE)
+				Printf("(Inode) id %i rid.width %.3f (%i) pipeAcc %.3f\n",id.nodenum,rid.width,rid.nodenum,pipeAcc);
+	}
+	else if(InNewRightContext(Bud(rbd)))
+	{
+	}
+	else if(InNewRightContext(PruneCap(w)))
+	{
+	} else {
+		
+	}
+
+	// Compute width from the pipe model accumulator
+	if(pipeAcc != 0){ // supported internodes (+ pruned pipes)
+		id.width = pow(pipeAcc,float(1./PIPEEXP));
+		if(SHOWPIPE)
+			Printf("Total %i pipeAcc %.3f %.3f\n",id.nodenum,pipeAcc,id.width);
+		if(id.node==1 && id.order==0){idwidth=id.width;} // moved from interpretation in this model, keeps track of width of stem base
+	}
+	produce Internode(id);
+}
+
+
+group GROW:
+production:
+	
+// Initial production handled by TreeReader
+
+
+Bud(bd):
+{
+	int nodenum;
+	// Buds will grow if their vigor is high enough to grow at least MINNODE internode
+	// One unit of vigor equals one new internode
+	if(bd.vigor > MINNODES)	
+	{
+		float budvigor=bd.vigor; //store so we can check on how often we exceed MAXGROW
+		// We only let each bud grow by at most MAXGROW per flush
+		if(bd.vigor > MAXGROW) {bd.vigor = MAXGROW;} //NW Feb 11
+		int numSegments = int(bd.vigor);
+		totSegs+=numSegments;
+		totNodes+=numSegments;
+		
+		//budn[bd.node]++;
+		// length is tweaked so that total shoot length = vigor * NODELENGTH	-is this really correct
+		//no it's not really suitable as length increases as the vigor increases towards the next integer
+		// the effect is dminished as vigor increases, but at a vigor of 1.9 the nodelength is 9.5 cm
+		//float length = (bd.vigor / float(numSegments)) * NODELENGTH;
+		// it would be better to have a random or some other relationship here
+		float length=NODELENGTH; // all nodes will have this length in this flush
+
+		//Printf("\n************\n\n\n Bud\n\n****************\n");
+		if (bd.lateral) { //JH setup for new branch
+			bd.order++;
+			totBrs++;
+			nodenum=0;
+		} else {	//get node number from Apex
+			nodenum=bd.node;
+		}
+		// Produce new internode;
+		for(int i = 1 ; i <= numSegments ; i++)
+		{
+			// desired direction for growth; REORIENT * light direction	-	TROPISM * gravity
+			V3f dir(REORIENT * env.getContinuousEnvDir(bd.pos,SAMPLERAD) + V3f(0,TROPISM,0));
+			// set this direction as the "tropism" direction
+			nproduce SetTropismDirection3f(dir);
+			InternodeData newInternode(nodenum++, bd.order, length);
+			highNode++;
+			// First internode produced (i == 1) by a lateral bud must be "lateral"
+			newInternode.budvigor=0;
+			newInternode.numSegs=0;
+			newInternode.length=length;
+			newInternode.flushno=flushno;
+			newInternode.nodenum=highNode;
+			newInternode.width=0.2;
+			newInternode.c=52;
+			if(i ==1) {
+				newInternode.lateral = bd.lateral;
+				newInternode.budvigor=budvigor;
+				newInternode.numSegs=numSegments;
+			}
+			nproduce RollL(137.5) Internode(newInternode);
+
+			// Produce a whorl of WHORLSIZE lateral buds
+			float activity=0.;
+			if (i==numSegments) {activity=1.0;} 	// JH setup apical dominance via activity
+			vector<int> v = getInitVector(WHORLSIZE); //Randomise the whorl bud number
+			float leafsize=LEAFSCALE;
+			if(i>=numSegments-1){
+				leafsize=leafsize*((i-(numSegments-3))*0.1);
+			}
+			for(int w = 0 ; w < WHORLSIZE ; w++){
+				float p=LEAFANGLE;
+				nproduce SB RollR(WHORLANGLE) Down(p) Leaf(LeafData(newInternode.node,bd.order,w,p,leafsize,0)) EB;
+				for(int bw=1;bw<=BUDSINAXIL;bw++){
+					nproduce SB Down(BRANCHANGLE+((bw-1)*10.)) Bud(BudData(nodenum,bd.order,v[w],bw,true,activity))EB ;
+				}
+				nproduce RollL(WHORLANGLE);
+			}
+		}
+		// Apical bud
+		bd.node=nodenum;
+		bd.lateral=false;
+		bd.axilIndex=1;
+		bd.leafIndex=0;
+		if(bd.order>0){bd.activity=1.0;}
+		produce Bud(bd); // bd.vigor will be updated after the limit MAXGROW as been applied, so it's set like it was in BHDISTRIBUTE NW Feb 11
+	}
+}
+
+/* INTERPRET_POSITIONS phase */
+/* Add GetPos after each module/
+/* Note that the positions are filled in based on the global interpretation rules (later in the file).
+ * If those rules are changed, something similar must be put here (as phase-specific interpretations).
+ */
+group INTERPRET_POSITIONS:
+production:
+Internode(id):
+{
+	produce Internode(id) GetPos(0,0,0);
+}
+
+Bud(bd):
+{
+	produce Bud(bd) GetPos(0,0,0);
+}
+
+Leaf(ld):
+{
+	produce Leaf(ld) GetPos(0,0,0) GetHead(0,0,0);
+}
+
+
+/* SET_POSITIONS phase */
+/* Handle position-based updates (using the shadow map) */
+group SET_POSITIONS:
+production:
+// 1. Pruning: we have to remove pruned internodes from the shadow map
+PruneCap(w) << Internode(id) GetPos(px,py,pz):
+{
+	// We only have to remove the internode from the shadow map if it has already been added;
+	// this is only if the newInternode flag is false
+	if (id.manPrune){Printf("Found %i.%i\n",id.node,id.order);}
+	if(!id.newInternode && !id.isLeaf){ //we only include internodes where there isn't a leaf as leaves are put in separately,
+		env.shadow3D(V3f(px,py,pz),false);
+		if(DEBUG){
+			Printf("Pruned Node %i @ order %i with width %.1f\n",id.node, id.order,id.width);
+		}
+	}
+	// Either way, we remove the internode from the tree
+	nPruned++;
+	tPruned++;
+	totNodes--;
+	//
+	if(SHOWPRUNES){
+		nproduce SB MoveTo(px,py,pz) SetColor(3) Sphere(1) EB;
+	}
+	produce;
+
+}
+// Remove buds and prune caps behind a PruneCap
+PruneCap(w) << Bud(bd) GetPos(px,py,pz): {produce;}
+PruneCap(w) << PruneCap(w2): { produce; }
+//remove leaves
+PruneCap(w) << Leaf(ld) GetPos(px,py,pz) GetHead(hx,hy,hz):
+{
+	if( DEBUG ){Printf("Leaf at %i %.1f %.1f %.1f\n",ld.node,px,py,pz);}
+	ld.pos=V3f(px,py,pz);
+	V3f head=V3f(hx,hy,hz);
+	V3f midPoint=ld.pos+head*(0.5*ld.leafsize);
+	if(!ld.newLeaf && !ld.dead){ //same reasoning as internodes, only remove from shadow map if it's been put in
+		//get the exposure at this point
+		env.shadow3D(midPoint,false);
+		if(SHOWPRUNES){
+			nproduce SB MoveTo3f(midPoint) SetColor(2) Sphere(1) EB;
+			nproduce SB SetWidth(0.5) SetColor(3) Line3f(ld.pos,midPoint)  EB;
+		}
+	}
+	produce;
+}
+
+// 2. Add new internodes (non-pruned) to the shadow map, allows for branch shading
+Internode(id) GetPos(px,py,pz):
+{
+	#ifdef _MSC_VER
+		if(_isnan(px) && ISNAN)
+			Printf("Internode GetPos is nodenum %i nan\n",id.nodenum);
+	#else
+		if(isnan(px) && ISNAN)
+			Printf("Internode GetPos is nodenum %i nan\n",id.nodenum);
+	#endif
+	//check we are inside the box
+	if(py>VOXSIZE*2. || px>VOXSIZE || px < -VOXSIZE || pz > VOXSIZE || pz < -VOXSIZE){
+		//Printf("\n***********************\n	You are now outside the light model!\n*********************\n");
+		outsideBox=true;
+	}
+	// We only have to add _new_ internodes to the shadow map
+	if(id.newInternode)
+	{
+		id.newInternode = false;
+		if(!id.isLeaf){ //only add the bare branch internodes here, leaves done separately
+			//Printf("Adding new internode %i at %.2f %.2f %.2f\n",id.node,px,py,pz);
+			env.shadow3D(V3f(px,py,pz),true);
+		}
+		
+	}
+	
+	if(doMTG){
+		fprintf(XYZfile,"%.2f, %.2f, %.2f, %i\n",px,pz,py,id.order); 
+		int ntype=5;
+		if(id.isLeaf)
+			ntype=6;
+		writeMTG(MTGfile,id,MTGplantStart,MTGstack,px,py,pz,ntype,id.order);
+	}
+	
+	id.expose=min(1.0f,env.getContinuousExposure(V3f(px,py,pz))); //Nov 10 Exposure at this node
+	if(manPruning && py > PRUNEHEIGHT)
+		produce PruneCap(id.width) Internode(id);
+	else
+		produce Internode(id);
+}
+
+// 3. Record bud positions
+Bud(bd) GetPos(px,py,pz):
+{
+	// We have to record the bud's position so we can read the accumulated light and light direction later on
+	bd.pos = V3f(px,py,pz);
+	maxHt=max(maxHt,py);
+	maxX=max(maxX,px);
+	minX=min(minX,px);
+	maxZ=max(maxZ,pz);
+	minZ=min(minZ,pz);
+	maxWidthX=maxX-minX;
+	maxWidthZ=maxZ-minZ;	
+	produce Bud(bd);
+}
+
+// 4. Record leaf positions; add leaves to shadow map
+Leaf(ld) GetPos(px,py,pz) GetHead(hx,hy,hz):
+{
+	if(DEBUG && ld.newLeaf){
+		Printf("Leaf %i.%i at 4 %.1f %.1f %.1f H: %.1f %.1f %.1f\n",ld.node,ld.leafIndex,px,py,pz,hz,hy,hz);
+		nproduce SB SetColor(87) Sphere(0.5) EB;
+		}
+	ld.pos = V3f(px,py,pz);
+	V3f head=V3f(hx,hy,hz);
+	V3f midPoint=ld.pos+head*(0.5*ld.leafsize);
+	if(ld.newLeaf) {
+		//nproduce SB MoveTo3f(midPoint) SetColor(80) Sphere(1) EB;
+		env.shadow3D(midPoint,true);
+		ld.newLeaf = false;
+	}
+	if(!ld.dead){
+		ld.expose=env.getContinuousExposure(V3f(px,py,pz));
+		if(ld.expose < LEAFEXPOSURE) { //change position to the ground, and extract a point from the shadow map
+			env.shadow3D(midPoint,false);
+			//nproduce SB MoveTo3f(midPoint) SetColor(4) Sphere(1) EB;
+			if (DEBUG2){
+				Printf("Killed leaf with expose of %f\n",ld.expose);
+			}
+			ld.pos=V3f(px,0,pz);
+			ld.dead=true;
+			ld.fdead=flushno;
+			if(SHOWDEADLEAVES){ //set dead leaves parallel to ground
+				nproduce SetHead(RAN_RNG(-1.,1.),0,RAN_RNG(-1.,1.),0,1,0);
+			}
+		}
+	}
+	produce Leaf(ld);
+}
+
+/* BHACCUMULATE phase Runs Backwards*/
+/* Compute light at the buds and accumulate light to the bottom of the tree */
+group BHACCUMULATE:
+production:
+
+// For buds, we compute the light exposure to provide demand, but doesn't contribute to supply which is done by the Leaf
+Bud(bd):
+{
+	// We have to keep the position bd.pos from an earlier phase for this query:
+	#ifdef _MSC_VER
+		if(_isnan(bd.pos.x) && ISNAN)
+			nproduce SB SetColor(1) Sphere(0.75) EB;
+	#else
+		if(isnan(bd.pos.x) && ISNAN)
+			nproduce SB SetColor(1) Sphere(0.75) EB;
+	#endif
+	bd.light = env.getContinuousExposure(bd.pos);
+	#ifdef _MSC_VER
+		if(_isnan(bd.light) && ISNAN)
+			nproduce SB SetColor(1) Sphere(0.75) EB;
+	#else
+		if(isnan(bd.light) && ISNAN)
+			nproduce SB SetColor(1) Sphere(0.75) EB;
+	#endif
+	if(DEBUG2)
+		Printf("Bud light %f\n",bd.light);
+
+	if (ran(1.0)< bd.light * DORMANCYFACTOR && bd.order>0) {bd.activity=1.0;} // JH changing lower bud activity
+	//if (ran(1.0)< bd.light * DORMANCYFACTOR && bd.order==0 && KEEPLEADER && bd.node > INITIALINTERNODES+1) {bd.activity=1.0;} // JH changing lower bud activity
+	produce Bud(bd);
+}
+
+// For Leaves, we compute the light exposure to provide supply, this decouples the supply from the leaves from the demand from the buds
+Leaf(ld):
+{
+	if(ld.dead){
+		ld.light=0.;
+	} else
+	{
+		ld.light = env.getContinuousExposure(ld.pos);
+		if(DEBUG2 && ld.light<0.1)
+			Printf("Leaf light %f\n",ld.light);
+		#ifdef _MSC_VER
+			if(_isnan(ld.light) && ISNAN)
+				nproduce SB SetColor(87)  Sphere(2) EB;
+		#else
+			if(isnan(ld.light) && ISNAN)
+				nproduce SB SetColor(87)  Sphere(2) EB;
+		#endif
+	}
+	produce Leaf(ld);
+}
+
+// For internodes, we have to accumulate light from all supported buds and internodes
+// We also take the opportunity to accumulate width for the pipe model
+Internode(id):
+{
+	// Initialize accumulators
+	id.count = 1;
+	id.light = 0.;
+	id.demand = 0.;
+	float pipeAcc = 0.0;
+	bool moreBranches = true;			 // true if there might be more branches left
+	
+	// additional data for InNewRightContext
+	InternodeData rid;
+	BudData rbd;
+	LeafData rld;
+	float w;
+	// As long as there might be branches left, we use InNewRightContext to look for them
+	while(moreBranches)
+	{
+		// 1. Internode on branch:
+		if(InNewRightContext(SB Internode(rid) EB))
+		{
+			//Printf(" 1. Internode on branch: %i\n",id.nodenum); //OK we get here
+			// Count and light are simply added
+			id.count += rid.count;
+			id.light += rid.light;
+			//OK this is good too, added MoveTo3f to ignore list
+			// Demand is incremented by one lateral share
+			id.demand += rid.count * (1.-lambda) * pow(rid.light / rid.count,NONLINEAR);
+
+			// Accumulate width for pipe model
+			pipeAcc += pow(rid.width,PIPEEXP);
+			if(SHOWPIPE)
+				Printf("(Branch) rid.width %.3f (%i) pipeAcc %.3f\n",rid.width,rid.nodenum,pipeAcc);
+		}
+		
+		// 2. Bud on branch:
+		else if(InNewRightContext(SB Bud(rbd) EB))
+		{
+			// Count of a bud is just one
+			id.count ++;
+			//Printf(" 2. Bud on branch: %i\n",id.nodenum); //OK we get here
+			// Add one lateral share to demand depending on activity
+			float act=1.0;
+			if(USEACT ){act=rbd.activity;}
+			id.demand += (1.-lambda) * act * pow(rbd.light,NONLINEAR);
+		}
+		// 3. Pruned branch:
+		else if(InNewRightContext(SB PruneCap(w) EB))
+		{
+			// No light or vigor; just increment the pipe accumulator
+			//Printf("3. PruneCap\n"); //All good with this too
+			pipeAcc += pow(w,PIPEEXP);
+		}
+		// 4. Get supply of light from leaves:
+		else if(InNewRightContext(SB Leaf(rld) EB))
+		{
+			//Increment light
+			id.light += rld.light;
+		}
+		// 5. If none of these are satisfied, we're out of branches
+		else
+			//Printf("at nodenum %i out of branches\n",id.nodenum);
+			moreBranches = false;
+	}
+	
+	// Now we have to do the same for whatever we're directly supporting
+	// This procedure is the same as for the branches, but demand is increased by one "main" share
+	if(InNewRightContext(Internode(rid)))
+	{
+		id.count += rid.count;
+		id.light += rid.light;
+		//Printf("Inode light %f\n",id.light);
+		// main shoot => relative strength lambda
+		id.demand += rid.count * lambda * pow(rid.light / rid.count,NONLINEAR);
+		pipeAcc += pow(rid.width,PIPEEXP);
+		if(SHOWPIPE)
+			Printf("(Inode) rid.width %.3f (%i) pipeAcc %.3f\n",rid.width,rid.nodenum,pipeAcc);
+	}
+	else if(InNewRightContext(Bud(rbd)))
+	{
+		id.count += 1;
+		id.light += rbd.light;
+		//Printf("Bud light %f\n",id.light);
+		float act=1.0;
+		if(USEACT){act=rbd.activity;}
+		id.demand += lambda * act * pow(rbd.light,NONLINEAR);
+	}
+	else if(InNewRightContext(PruneCap(w)))
+	{
+		pipeAcc += pow(w,PIPEEXP);
+	}
+
+	// Compute width from the pipe model accumulator
+	if(pipeAcc != 0){ // supported internodes (+ pruned pipes)
+		id.width = pow(pipeAcc,float(1./(PIPEEXP)));
+		if(SHOWPIPE)
+			Printf("Total %i pipeAcc %.3f %.3f\n",id.nodenum,pipeAcc,id.width);
+		if(id.node==1 && id.order==0)
+			idwidth=id.width;
+	}
+	// Update internode values
+	//if(id.order < 2)
+	//	Printf("Branch Order %i %i %f count %i\n",id.order,id.nodenum,id.light,id.count);
+	produce Internode(id);
+}
+
+
+/* BHDISTRIBUTE phase */
+/* Compute vigor from light and distribute to the tree using the Borchert-Honda allocation model */
+group BHDISTRIBUTE:
+// 1. Total vigor is computed from total light at the basal internode
+Roots() < Internode(id):
+{
+	float seasonalLightFactor;
+	if(flushno % 2 == 0)
+		seasonalLightFactor=LIGHTFACTOR;
+	else
+		seasonalLightFactor= LIGHTFACTOR * 0.6f;
+if(id.light == 0.0)
+		id.vigor = INITIALFLUX; //INITIALFLUX is important in the first instance if there is no light
+	else
+		id.vigor=seasonalLightFactor * id.light;
+	
+	Printf("Total light at base = %g ==> total vigor = %g\n",id.light,id.vigor);
+	Printf("%d supported entities\n",id.count);
+	produce Internode(id);
+}
+
+// 2. All other internodes
+Internode(lid) << Internode(id):
+{
+	// We can claim a share of our parent's vigor proportional to how much of its total demand parameter is ours
+	float myDemand;
+	// Our demand = lam * count * pow(light/count , NONLINEAR),
+			// where lam = lambda if we're apical, lam = (1 - lambda) if we're lateral
+
+	myDemand=id.count * pow(id.light / id.count,NONLINEAR);
+
+	if(id.lateral)
+		myDemand *= 1. - lambda;
+	else
+		myDemand *= lambda;
+
+	// Update our vigor
+	if(lid.demand>0.){
+		id.vigor = lid.vigor * (myDemand / lid.demand);
+	} else
+	{
+		id.vigor=lid.vigor;
+	}
+	if(id.node==1 && SHOWB)
+		Printf("%i << %i id.count %i lid.vigor %.2f mydemand %.2f lid.demand %.2f\n",lid.nodenum,id.nodenum,id.count,lid.vigor,myDemand,lid.demand);
+	produce Internode(id);
+}
+
+// 3. Buds
+Internode(lid) << Bud(bd):
+{
+	//buds are released based on the bud number held in bd.leafIndex 
+	//	(at present from 1 to 3, but the numbers are assigned randomly)
+	int rn=SkewRan();
+	if(lid.order==0){rn=3;} //so that each of the first order buds always get their vigor
+	if(bd.lateral && bd.leafIndex > rn ){
+		bd.vigor=0.;
+	}
+	else	// a chosen lateral or an apex
+	{
+		// Claim a share of the parent's vigor
+		// Our demand = lam * pow(light , NONLINEAR),
+		// where lam = lambda if we're apical, lam = (1 - lambda) if we're lateral
+		float myDemand = pow(bd.light,NONLINEAR)*bd.activity;	//?????????should activity be here
+		if(bd.lateral)
+			myDemand *= 1. - lambda;
+		else
+			myDemand *= lambda;
+		// Update our vigor
+		if(lid.demand>0.){
+			bd.vigor = lid.vigor * (myDemand / lid.demand);
+		} else {
+			bd.vigor=lid.vigor;
+		}
+		//if(bd.leafIndex==1){Printf("bud light %f lid.vigor %f demand %f\n",bd.light,lid.vigor,lid.demand);}
+		// We only let each bud grow by at most MAXGROW per flush
+		//if(bd.vigor > MAXGROW)	bd.vigor = MAXGROW;	//this seems to be in the wrong place see NW Feb 11 - moved to Bud in GROW
+	}
+	produce Bud(bd);
+}
+
+//4.0 Leaves - upadte branch width so leaves don't start with branches - which looks silly
+Internode(lid) << Leaf(ld):
+{
+	ld.bWidth=lid.width;
+	ld.age=ld.age+0.5;
+	if(ld.leafsize < LEAFSCALE)
+		ld.leafsize=min(LEAFSCALE,ld.leafsize*2.0*ld.age); //first time thru don't alter size, after that they should become LEAFSCALE size
+	produce Leaf(ld);
+}
+
+/* PRUNE phase */
+/* Prune inefficient branches from outside in */
+// this runs in Backwards direction
+group PRUNE:
+production:
+// trunk immune to pruning
+Roots() < Internode(id) : { produce Internode(id); }
+
+
+// Other internodes:
+Internode(id):
+{
+	// Since some supported branches may have been pruned at some time in this step,
+	// we have to recompute id.count as we go; this is done in pretty much the same
+	// way as we compute it initially, up in BHACCUMULATE.
+
+	//we already have this info so no need to do it again
+	 
+	// We prune if there's not enough vigor allocated for the size of the branch
+	// This is vigor / count; if it's too low (below DROPTHRESH), we prune.
+	if(id.vigor < 0 ){
+		Printf("Warning id.vigor < 0 \n");
+	}
+	if((id.vigor / float(id.count)) < DROPTHRESH && id.order > 1)
+	{
+		//Printf("Prune test %f<%f\n",id.vigor / float(id.count),DROPTHRESH);
+		nPruneCaps++;
+		produce PruneCap(id.width) Internode(id);
+	}
+	else {
+		produce Internode(id);
+	}
+}
+
+/*
+ * If we're OK with pruning from the inside out, all of this can be done with a single
+ * Internode production in the GROW phase:
+ *
+ * Internode(id) :
+ * {
+ *	 if((id.vigor / float(id.count)) <= DROPTHRESH)
+ *		 produce PruneCap(id.width) Internode(id);
+ * }
+ *
+ */
+
+
+/* Global rules */
+group 0:
+//NW Nov 10
+production:
+
+MouseIns() < Internode(id):
+{
+	Printf("****** Marking ID %i.%i\n",id.nodenum,id.order);
+	id.manPrune=true;
+	//sprintf(flushlab,"             %i",id.nodenum);
+	produce PruneCap(id.width) Internode(id); // Label(flushlab);
+}
+
+MouseInsPos(MouseStatus):
+{
+	Printf("*******************\nPruning at %icm\n*************\n",PRUNEHEIGHT);
+	manPruning=true;
+	produce;
+}
+
+Box(draw):
+{
+	if(draw){
+		float vstep=VOXSIZE/((float) DENSITY-1);
+		
+		nproduce SB SetColor(0) SetWidth(1) MoveTo(-VOXSIZE,0,-VOXSIZE);
+		nproduce SB;
+	/*	for(int j=0;j<DENSITY-1;j++){
+			nproduce f(vstep) SB Right(90) F(VOXSIZE*2.) EB;
+		} */
+		nproduce EB;
+		for(int i=0;i<4;i++){
+			nproduce LineTo3f(V3f(X[i],0,Z[i]));
+		}
+		nproduce MoveTo(-VOXSIZE,VOXSIZE*2,-VOXSIZE);
+		for(int i=0;i<4;i++){
+			nproduce LineTo3f(V3f(X[i],VOXSIZE*2,Z[i]));
+		}
+		for(int i=0;i<4;i++){
+			nproduce MoveTo(X[i],0,Z[i]) LineTo3f(V3f(X[i],VOXSIZE*2,Z[i]));
+		}
+		produce EB;
+	}
+}
+
+
+interpretation:
+
+// In Roots, we just set up initial values: position, orientation, elasticity
+Roots():
+{
+	if(SHOWLABEL){
+		sprintf(flushlab,"Flush %i Age %i (%.2f) %i %.1f",flushno,age,lambda,step,totNodes/(float)totBrs);
+		produce SB SetColor(1) MoveTo(30,5,0) Label(flushlab) EB MoveTo(0,0,0) SetHead(0,1,0 , -1,0,0) Elasticity(TROPISMELASTICITY);
+	} else
+		produce SB SetColor(1) MoveTo(30,5,0) EB MoveTo(0,0,0) SetHead(0,1,0 , -1,0,0) Elasticity(TROPISMELASTICITY);
+}
+
+// Each internode is just drawn as a line of the required length and width
+Internode(id):
+{
+	if(SHOWBRANCHES){
+		produce SetColor(id.c) SetWidth(id.width) F(id.length) ;
+	} else {
+			nproduce f(id.length) ;
+	}
+	if(SHOWBALLS && id.node == 1){
+		sprintf(flushlab,"      %i\n",id.nodenum);
+		nproduce Label(flushlab);
+	}
+	produce;
+}
+
+Leaf(ld):
+{
+	if(SHOWONLYDEADLEAVES){ 
+
+		if(ld.expose<LEAFEXPOSURE){ //show dead leaves in situ
+				nproduce SetWidth(0.2) SetColor(109+flushno) F(ld.leafsize*0.1) Surface(LEAF,ld.leafsize*0.5); //had to bring RollR inside as it did weird things to tree when it preceeded it. Down(ld.pitch)
+		}
+	} else
+	{
+		if (SHOWLEAVES || (SHOWLEAVESLAST && flushno == FLUSHES ) ) {
+			if(!ld.dead){ //shows the live leaves
+				//Printf("Leaf expose	%.1f x,y,z %.1f %.1f %.1f\n",ld.expose,ld.pos.x,ld.pos.y,ld.pos.z);
+				nproduce SetWidth(0.2) SetColor(ld.expose*35+48) F(ld.leafsize*0.1) Surface(LEAF,ld.leafsize); //had to bring RollR inside as it did weird things to tree when it preceeded it.  Down(ld.pitch)
+			} else
+			{
+				if(SHOWDEADLEAVES){ //shows dead leaves on the ground
+					nproduce SB SetColor(109+flushno-ld.fdead) MoveTo(ld.pos.x,ld.pos.y,ld.pos.z) Surface(LEAF,ld.leafsize) EB; //
+				}
+			}
+		}
+	}
+	produce SB f(5) EB;
+}
+
+// Buds
+Bud(bd):
+{	
+	if(SHOWLATERALBUDS  && bd.lateral && bd.order==0){ // && bd.activity > 0
+		nproduce SB SetColor(132) Sphere(2) EB;
+	}
+	if(SHOWOTHERBUDS  && !bd.lateral && bd.order==0){
+		nproduce SB SetColor(84) Sphere(2) EB;
+	}
+	produce;
+}
+
+
+PruneCap(w):
+{
+	
+	if(SHOWPRUNECAP){
+		produce SB SetColor(1) Sphere(2) EB;
+	}
+}
+
+MouseIns():
+{
+	produce;// SetColor(2) Sphere(1);
+}
+

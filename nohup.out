@@ -1,0 +1,4629 @@
+<command-line>: error: missing '(' after predicate
+<command-line>: error: missing '(' after predicate
+g++ -c -fPIC -O3 lsys.ii
+g++ -shared -fPIC -Xlinker -Bsymbolic -o lsys.so lsys.o
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+Steps: 79
+READ (1)
+Creating Orchard Layout
+0 -800.00  0 -1400.00
+1 -400.00  0 -1400.00
+2 0.00  0 -1400.00
+3 400.00  0 -1400.00
+4 800.00  0 -1400.00
+5 -800.00  0 -700.00
+6 -400.00  0 -700.00
+7 0.00  0 -700.00
+8 400.00  0 -700.00
+9 800.00  0 -700.00
+10 -800.00  0 0.00
+11 -400.00  0 0.00
+12 0.00  0 0.00
+13 400.00  0 0.00
+14 800.00  0 0.00
+15 -800.00  0 700.00
+16 -400.00  0 700.00
+17 0.00  0 700.00
+18 400.00  0 700.00
+19 800.00  0 700.00
+20 -800.00  0 1400.00
+21 -400.00  0 1400.00
+22 0.00  0 1400.00
+23 400.00  0 1400.00
+24 800.00  0 1400.00
+Start READ phase part 2
+READ (2)
+Running TreeReader for plant 0
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 0
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 0
+********************
+Running TreeReader for plant 1
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 1
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 1
+********************
+Running TreeReader for plant 2
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 2
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 2
+********************
+Running TreeReader for plant 3
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 3
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 3
+********************
+Running TreeReader for plant 4
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 4
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - ex
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+it MTG reading loop
+
+Finsihed Processing plant 4
+********************
+Running TreeReader for plant 5
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 5
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 5
+********************
+Running TreeReader for plant 6
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 6
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 6
+********************
+Running TreeReader for plant 7
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 7
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 7
+********************
+Running TreeReader for plant 8
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 8
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 8
+********************
+Running TreeReader for plant 9
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 9
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 9
+********************
+Running TreeReader for plant 10
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBr
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+anches, on with the show for tree 10
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 10
+********************
+Running TreeReader for plant 11
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 11
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 11
+********************
+Running TreeReader for plant 12
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 12
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 12
+********************
+Running TreeReader for plant 13
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 13
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 13
+********************
+Running TreeReader for plant 14
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 14
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 14
+********************
+Running TreeReader for plant 15
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 15
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 15
+********************
+Running TreeReader for plant 16
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Proc
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+essing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 16
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 16
+********************
+Running TreeReader for plant 17
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 17
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 17
+********************
+Running TreeReader for plant 18
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 18
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 18
+********************
+Running TreeReader for plant 19
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 19
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 19
+********************
+Running TreeReader for plant 20
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 20
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 20
+********************
+Running TreeReader for plant 21
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 21
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+21
+********************
+Running TreeReader for plant 22
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 22
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 22
+********************
+Running TreeReader for plant 23
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 23
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 23
+********************
+Running TreeReader for plant 24
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 24
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 24
+********************
+READ phase completed
+
+Adjusting Widths (3)
+Width Adjust complete
+Width at base is 2.778 cm
+
+INTERPRET_POSITIONS (4)
+SET_POSITIONS (5)
+Current height of plant after 8 flushes is 223.2 cm
+Pruned 0 entities
+End of Growing Flush 8 (year 4) (step 5)
+**************
+
+BHACCUMULATE (6)
+BHDISTRIBUTE (7)
+Tree (0): Total light at base = 397.318 ==> total vigor = 5959.77
+4138 supported entities
+Tree (1): Total light at base = 356.148 ==> total vigor = 5342.22
+4130 supported entities
+Tree (2): Total light at base = 378.836 ==> total vigor = 5682.54
+4130 supported entities
+Tree (3): Total light at base = 374.807 ==> total vigor = 5622.11
+4130 supported entities
+Tree (4): Total light at base = 371.373 ==> total vigor = 5570.6
+4130 supported entities
+Tree (5): Total light at base = 99.0685 ==> total vigor = 1486.03
+4130 supported entities
+Tree (6): Total light at base = 90.1858 ==> total vigor = 1352.79
+4130 supported entities
+Tree (7): Total light at base = 88.8373 ==> total vigor = 1332.56
+4130 supported entities
+Tree (8): Total light at base = 91.0658 ==> total vigor = 1365.99
+4130 supported entities
+Tree (9): Total light at base = 98.6973 ==> total vigor = 1480.46
+4130 supported entities
+Tree (10): Total light at base = 88.4619 ==> total vigor = 1326.93
+4130 supported entities
+Tree (11): Total light at base = 81.363 ==> total vigor = 1220.44
+4130 supported entities
+Tree (12): Total light at base = 83 ==> total vigor = 1245
+4130 supported entities
+Tree (13): Total light at base = 82.325 ==> total vigor = 1234.87
+4130 supported entities
+Tree (14): Total light at base = 91.2277 ==> total vigor = 1368.42
+4130 supported entities
+Tree (15): Total light at base = 87.4546 ==> total vigor = 1311.82
+4130 supported entities
+Tree (16): Total light at base = 85.9645 ==> total vigor = 1289.47
+4130 supported entities
+Tree (17): Total light at base = 92.2637 ==> total vigor = 1383.96
+4130 supported entities
+Tree (18): Total light at base = 84.7199 ==> total vigor = 1270.8
+4130 supported entities
+Tree (19): Total light at base = 85.4445 ==> total vigor = 1281.67
+4130 supported entities
+Tree (20): Total light at base = 353.545 ==> total vigor = 5303.18
+4130 supported entities
+Tree (21): Total light at base = 344.077 ==> total vigor = 5161.16
+4130 supported entities
+Tree (22): Total light at base = 343.99 ==> total vigor = 5159.86
+4130 supported entities
+Tree (23): Total light at base = 343.133 ==> total vigor = 5147
+4130 supported entities
+Tree (24): Total light at base = 336.886 ==> total vigor = 5053.29
+4130 supported entities
+PRUNE (8)
+Produced 7556 PruneCaps
+GROW (9)
+Lambda now 0.50 (step 9, age 4)
+
+Nodes 1585 Branches 295 N:B 5.4
+INTERPRET_POSITIONS (10)
+SET_POSITIONS (11)
+Current height of plant after 9 flushes is 251.9 cm
+Pruned 476 entities
+End of Growing Flush 9 (year 4) (step 11)
+**************
+
+BHACCUMULATE (12)
+BHDISTRIBUTE (13)
+Tree (0): Total light at base = 525.852 ==> total vigor = 7887.79
+14609 supported entities
+Tree (1): Total light at base = 581.907 ==> total vigor = 8728.6
+13108 supported entities
+Tree (2): Total light at base = 517.339 ==> total vigor = 7760.09
+13009 supported entities
+Tree (3): Total light at base = 571.42 ==> total vigor = 8571.29
+14113 supported entities
+Tree (4): Total light at base = 648.184 ==> total vigor = 9722.75
+13345 supported entities
+Tree (5): Total light at base = 205.331 ==> total vigor = 3079.96
+5134 supported entities
+Tree (6): Total light at base = 190.984 ==> total vigor = 2864.76
+4710 supported entities
+Tree (7): Total light at base = 222.979 ==> total vigor = 3344.69
+4949 supported entities
+Tree (8): Total light at base = 212.176 ==> total vigor = 3182.64
+4891 supported entities
+Tree (9): Total light at base = 224.648 ==> total vigor = 3369.72
+5089 supported entities
+Tree (10): Total light at base = 241.878 ==> total vigor = 3628.17
+4725 supported entities
+Tree (11): Total light at base = 183.3 ==> total vigor = 2749.51
+4058 supported entities
+Tree (12): Total light at base = 213.238 ==> total vigor = 3198.56
+4433 supported entities
+Tree (13): Total light at base = 200.094 ==> total vigor = 3001.42
+4598 supported entities
+Tree (14): Total light at base = 208.831 ==> total vigor = 3132.47
+4999 supported entities
+Tree (15): Total light at base = 221.625 ==> total vigor = 3324.38
+4770 supported entities
+Tree (16): Total light at base = 201.179 ==> total vigor = 3017.68
+4653 supported entities
+Tree (17): Total light at base = 178.839 ==> total vigor = 2682.59
+4979 supported entities
+Tree (18): Total light at base = 190.882 ==> total vigor = 2863.23
+4617 supported entities
+Tree (19): Total light at base = 195.67 ==> total vigor = 2935.05
+4600 supported entities
+Tree (20): Total light at base = 507.242 ==> total vigor = 7608.62
+13102 supported entities
+Tree (21): Total light at base = 434.189 ==> total vigor = 6512.84
+12464 supported entities
+Tree (22): Total light at base = 502.7 ==> total vigor = 7540.5
+12291 supported entities
+Tree (23): Total light at base = 428.765 ==> total vigor = 6431.48
+12291 supported entities
+Tree (24): Total light at base = 398.016 ==> total vigor = 5970.24
+12403 supported entities
+PRUNE (14)
+Produced 16998 PruneCaps
+GROW (15)
+Lambda now 0.50 (step 15, age 5)
+
+Nodes 2730 Branches 338 N:B 8.1
+INTERPRET_POSITIONS (16)
+SET_POSITIONS (17)
+Current height of plant after 10 flushes is 296.3 cm
+Pruned 212 entities
+End of Growing Flush 10 (year 5) (step 17)
+**************
+
+BHACCUMULATE (18)
+BHDISTRIBUTE (19)
+Tree (0): Total light at base = 703.583 ==> total vigor = 10553.7
+21643 supported entities
+Tree (1): Total light at base = 764.066 ==> total vigor = 11461
+22156 supported entities
+Tree (2): Total light at base = 754.419 ==> total vigor = 11316.3
+20223 supported entities
+Tree (3): Total light at base = 786.551 ==> total vigor = 11798.3
+22588 supported entities
+Tree (4): Total light at base = 947.621 ==> total vigor = 14214.3
+22798 supported entities
+Tree (5): Total light at base = 350.867 ==> total vigor = 5263
+10249 supported entities
+Tree (6): Total light at base = 337.315 ==> total vigor = 5059.72
+9399 supported entities
+Tree (7): Total light at base = 371.438 ==> total vigor = 5571.57
+10354 supported entities
+Tree (8): Total light at base = 340.363 ==> total vigor = 5105.44
+9644 supported entities
+Tree (9): Total light at base = 400.185 ==> total vigor = 6002.78
+10603 supported entities
+Tree (10): Total light at base = 391.506 ==> total vigor = 5872.6
+11273 supported entities
+Tree (11): Total light at base = 353.915 ==> total vigor = 5308.72
+8478 supported entities
+Tree (12): Total light at base = 370.286 ==> total vigor = 5554.3
+10027 supported entities
+Tree (13): Total light at base = 354.106 ==> total vigor = 5311.59
+9502 supported entities
+Tree (14): Total light at base = 388.865 ==> total vigor = 5832.98
+10074 supported entities
+Tree (15): Total light at base = 371.937 ==> total vigor = 5579.06
+10423 supported entities
+Tree (16): Total light at base = 383.436 ==> total vigor = 5751.54
+9975 supported entities
+Tree (17): Total light at base = 331.568 ==> total vigor = 4973.52
+9084 supported entities
+Tree (18): Total light at base = 361.132 ==> total vigor = 5416.98
+9475 supported entities
+Tree (19): Total light at base = 339.971 ==> total vigor = 5099.56
+9272 supported entities
+Tree (20): Total light at base = 693.167 ==> total vigor = 10397.5
+19442 supported entities
+Tree (21): Total light at base = 611.695 ==> total vigor = 9175.43
+17461 supported entities
+Tree (22): Total light at base = 772.68 ==> total vigor = 11590.2
+19996 supported entities
+Tree (23): Total light at base = 675.744 ==> total vigor = 10136.2
+16810 supported entities
+Tree (24): Total light at base = 566.394 ==> total vigor = 8495.91
+15801 supported entities
+PRUNE (20)
+Produced 28119 PruneCaps
+GROW (21)
+Lambda now 0.50 (step 21, age 5)
+
+Nodes 5260 Branches 549 N:B 9.6
+INTERPRET_POSITIONS (22)
+SET_POSITIONS (23)
+Current height of plant after 11 flushes is 343.4 cm
+Pruned 768 entities
+End of Growing Flush 11 (year 5) (step 23)
+**************
+
+BHACCUMULATE (24)
+BHDISTRIBUTE (25)
+Tree (0): Total light at base = 1105.96 ==> total vigor = 16589.3
+29489 supported entities
+Tree (1): Total light at base = 1050.69 ==> total vigor = 15760.3
+31069 supported entities
+Tree (2): Total light at base = 897.748 ==> total vigor = 13466.2
+30615 supported entities
+Tree (3): Total light at base = 1009 ==> total vigor = 15135
+32021 supported entities
+Tree (4): Total light at base = 1127.35 ==> total vigor = 16910.3
+38438 supported entities
+Tree (5): Total light at base = 604.404 ==> total vigor = 9066.06
+17425 supported entities
+Tree (6): Total light at base = 615.407 ==> total vigor = 9231.11
+16947 supported entities
+Tree (7): Total light at base = 594.244 ==> total vigor = 8913.67
+18568 supported entities
+Tree (8): Total light at base = 610.641 ==> total vigor = 9159.61
+16852 supported entities
+Tree (9): Total light at base = 767.956 ==> total vigor = 11519.3
+20015 supported entities
+Tree (10): Total light at base = 758.801 ==> total vigor = 11382
+18812 supported entities
+Tree (11): Total light at base = 686.194 ==> total vigor = 10292.9
+16990 supported entities
+Tree (12): Total light at base = 590.678 ==> total vigor = 8860.16
+17868 supported entities
+Tree (13): Total light at base = 619.583 ==> total vigor = 9293.75
+18131 supported entities
+Tree (14): Total light at base = 699.537 ==> total vigor = 10493
+18974 supported entities
+Tree (15): Total light at base = 638.305 ==> total vigor = 9574.58
+18214 supported entities
+Tree (16): Total light at base = 630.887 ==> total vigor = 9463.3
+18864 supported entities
+Tree (17): Total light at base = 597.95 ==> total vigor = 8969.24
+15902 supported entities
+Tree (18): Total light at base = 636.001 ==> total vigor = 9540.02
+17715 supported entities
+Tree (19): Total light at base = 621.75 ==> total vigor = 9326.25
+17216 supported entities
+Tree (20): Total light at base = 876.783 ==> total vigor = 13151.7
+28137 supported entities
+Tree (21): Total light at base = 881.839 ==> total vigor = 13227.6
+25467 supported entities
+Tree (22): Total light at base = 907.24 ==> total vigor = 13608.6
+30761 supported entities
+Tree (23): Total light at base = 920.026 ==> total vigor = 13800.4
+27362 supported entities
+Tree (24): Total light at base = 848.922 ==> total vigor = 12733.8
+23869 supported entities
+PRUNE (26)
+Produced 42977 PruneCaps
+GROW (27)
+Lambda now 0.50 (step 27, age 6)
+
+Nodes 8895 Branches 834 N:B 10.7
+INTERPRET_POSITIONS (28)
+SET_POSITIONS (29)
+Current height of plant after 12 flushes is 393.5 cm
+Pruned 1220 entities
+End of Growing Flush 12 (year 6) (step 29)
+**************
+
+BHACCUMULATE (30)
+BHDISTRIBUTE (31)
+Tree (0): Total light at base = 1236.06 ==> total vigor = 18540.8
+43752 supported entities
+Tree (1): Total light at base = 1070.74 ==> total vigor = 16061.1
+44062 supported entities
+Tree (2): Total light at base = 973.141 ==> total vigor = 14597.1
+35529 supported entities
+Tree (3): Total light at base = 1121.95 ==> total vigor = 16829.2
+42687 supported entities
+Tree (4): Total light at base = 1205.25 ==> total vigor = 18078.8
+49993 supported entities
+Tree (5): Total light at base = 989.945 ==> total vigor = 14849.2
+30228 supported entities
+Tree (6): Total light at base = 986.96 ==> total vigor = 14804.4
+30656 supported entities
+Tree (7): Total light at base = 1008.99 ==> total vigor = 15134.8
+30819 supported entities
+Tree (8): Total light at base = 963.395 ==> total vigor = 14450.9
+30475 supported entities
+Tree (9): Total light at base = 1138.92 ==> total vigor = 17083.8
+36374 supported entities
+Tree (10): Total light at base = 1101.01 ==> total vigor = 16515.2
+37840 supported entities
+Tree (11): Total light at base = 1070.12 ==> total vigor = 16051.8
+32824 supported entities
+Tree (12): Total light at base = 897.583 ==> total vigor = 13463.7
+30501 supported entities
+Tree (13): Total light at base = 971.035 ==> total vigor = 14565.5
+30620 supported entities
+Tree (14): Total light at base = 1123.46 ==> total vigor = 16851.9
+34124 supported entities
+Tree (15): Total light at base = 1048 ==> total vigor = 15720
+31762 supported entities
+Tree (16): Total light at base = 907.509 ==> total vigor = 13612.6
+31559 supported entities
+Tree (17): Total light at base = 962.704 ==> total vigor = 14440.6
+29979 supported entities
+Tree (18): Total light at base = 991.791 ==> total vigor = 14876.9
+32328 supported entities
+Tree (19): Total light at base = 1041.32 ==> total vigor = 15619.8
+30390 supported entities
+Tree (20): Total light at base = 1084.83 ==> total vigor = 16272.4
+38062 supported entities
+Tree (21): Total light at base = 878.935 ==> total vigor = 13184
+36630 supported entities
+Tree (22): Total light at base = 1140.89 ==> total vigor = 17113.4
+37179 supported entities
+Tree (23): Total light at base = 1169.22 ==> total vigor = 17538.3
+35891 supported entities
+Tree (24): Total light at base = 1174.7 ==> total vigor = 17620.5
+34345 supported entities
+PRUNE (32)
+Produced 68220 PruneCaps
+GROW (33)
+Lambda now 0.50 (step 33, age 6)
+
+Nodes 14441 Branches 1347 N:B 10.7
+INTERPRET_POSITIONS (34)
+SET_POSITIONS (35)
+Current height of plant after 13 flushes is 452.7 cm
+Pruned 2195 entities
+End of Growing Flush 13 (year 6) (step 35)
+**************
+
+BHACCUMULATE (36)
+BHDISTRIBUTE (37)
+Tree (0): Total light at base = 1501.27 ==> total vigor = 22519.1
+52241 supported entities
+Tree (1): Total light at base = 1102.83 ==> total vigor = 16542.5
+45402 supported entities
+Tree (2): Total light at base = 1115.31 ==> total vigor = 16729.7
+40116 supported entities
+Tree (3): Total light at base = 1200.33 ==> total vigor = 18004.9
+47903 supported entities
+Tree (4): Total light at base = 1427.28 ==> total vigor = 21409.3
+51640 supported entities
+Tree (5): Total light at base = 1461.81 ==> total vigor = 21927.2
+51221 supported entities
+Tree (6): Total light at base = 1557.54 ==> total vigor = 23363
+52606 supported entities
+Tree (7): Total light at base = 1656.69 ==> total vigor = 24850.4
+50394 supported entities
+Tree (8): Total light at base = 1391.07 ==> total vigor = 20866.1
+48282 supported entities
+Tree (9): Total light at base = 1719.21 ==> total vigor = 25788.1
+57924 supported entities
+Tree (10): Total light at base = 1671.97 ==> total vigor = 25079.6
+57931 supported entities
+Tree (11): Total light at base = 1524.09 ==> total vigor = 22861.3
+53783 supported entities
+Tree (12): Total light at base = 1344.74 ==> total vigor = 20171.1
+48685 supported entities
+Tree (13): Total light at base = 1469.07 ==> total vigor = 22036
+49215 supported entities
+Tree (14): Total light at base = 1616.59 ==> total vigor = 24248.9
+57504 supported entities
+Tree (15): Total light at base = 1545.18 ==> total vigor = 23177.7
+52732 supported entities
+Tree (16): Total light at base = 1361.72 ==> total vigor = 20425.7
+46293 supported entities
+Tree (17): Total light at base = 1263.92 ==> total vigor = 18958.8
+48962 supported entities
+Tree (18): Total light at base = 1427.01 ==> total vigor = 21405.1
+51790 supported entities
+Tree (19): Total light at base = 1555.74 ==> total vigor = 23336.1
+53354 supported entities
+Tree (20): Total light at base = 1448.09 ==> total vigor = 21721.4
+48567 supported entities
+Tree (21): Total light at base = 927.929 ==> total vigor = 13918.9
+35475 supported entities
+Tree (22): Total light at base = 1236.76 ==> total vigor = 18551.5
+49726 supported entities
+Tree (23): Total light at base = 1253.61 ==> total vigor = 18804.2
+48973 supported entities
+Tree (24): Total light at base = 1451.79 ==> total vigor = 21776.9
+49923 supported entities
+PRUNE (38)
+Produced 97404 PruneCaps
+GROW (39)
+Lambda now 0.50 (step 39, age 7)
+
+Nodes 21959 Branches 2036 N:B 10.8
+INTERPRET_POSITIONS (40)
+SET_POSITIONS (41)
+Current height of plant after 14 flushes is 505.7 cm
+Pruned 4620 entities
+End of Growing Flush 14 (year 7) (step 41)
+**************
+
+BHACCUMULATE (42)
+BHDISTRIBUTE (43)
+Tree (0): Total light at base = 1654.39 ==> total vigor = 24815.8
+66040 supported entities
+Tree (1): Total light at base = 1141.01 ==> total vigor = 17115.2
+41214 supported entities
+Tree (2): Total light at base = 1139.98 ==> total vigor = 17099.6
+48296 supported entities
+Tree (3): Total light at base = 1352.84 ==> total vigor = 20292.6
+53305 supported entities
+Tree (4): Total light at base = 1525.02 ==> total vigor = 22875.3
+59853 supported entities
+Tree (5): Total light at base = 2164.45 ==> total vigor = 32466.7
+77509 supported entities
+Tree (6): Total light at base = 2220.65 ==> total vigor = 33309.8
+80661 supported entities
+Tree (7): Total light at base = 2291.01 ==> total vigor = 34365.2
+83194 supported entities
+Tree (8): Total light at base = 1854.16 ==> total vigor = 27812.4
+75025 supported entities
+Tree (9): Total light at base = 2242.43 ==> total vigor = 33636.5
+88400 supported entities
+Tree (10): Total light at base = 2291.63 ==> total vigor = 34374.4
+86711 supported entities
+Tree (11): Total light at base = 2201.99 ==> total vigor = 33029.8
+80161 supported entities
+Tree (12): Total light at base = 1892.23 ==> total vigor = 28383.5
+68869 supported entities
+Tree (13): Total light at base = 2063.85 ==> total vigor = 30957.7
+75839 supported entities
+Tree (14): Total light at base = 2227.02 ==> total vigor = 33405.2
+83803 supported entities
+Tree (15): Total light at base = 2177.23 ==> total vigor = 32658.4
+80620 supported entities
+Tree (16): Total light at base = 1919.38 ==> total vigor = 28790.8
+70996 supported entities
+Tree (17): Total light at base = 1734.91 ==> total vigor = 26023.6
+68553 supported entities
+Tree (18): Total light at base = 1997.75 ==> total vigor = 29966.3
+74408 supported entities
+Tree (19): Total light at base = 2235.19 ==> total vigor = 33527.9
+79187 supported entities
+Tree (20): Total light at base = 1883.29 ==> total vigor = 28249.3
+59613 supported entities
+Tree (21): Total light at base = 1111.14 ==> total vigor = 16667.1
+40471 supported entities
+Tree (22): Total light at base = 1596.26 ==> total vigor = 23943.9
+51023 supported entities
+Tree (23): Total light at base = 1518.27 ==> total vigor = 22774.1
+52592 supported entities
+Tree (24): Total light at base = 1452.2 ==> total vigor = 21783
+61074 supported entities
+PRUNE (44)
+Produced 133999 PruneCaps
+GROW (45)
+Lambda now 0.50 (step 45, age 7)
+
+Nodes 31274 Branches 2867 N:B 10.9
+INTERPRET_POSITIONS (46)
+SET_POSITIONS (47)
+Current height of plant after 15 flushes is 560.2 cm
+Pruned 5777 entities
+End of Growing Flush 15 (year 7) (step 47)
+**************
+
+BHACCUMULATE (48)
+BHDISTRIBUTE (49)
+Tree (0): Total light at base = 1590.52 ==> total vigor = 23857.8
+69851 supported entities
+Tree (1): Total light at base = 1322.88 ==> total vigor = 19843.1
+48990 supported entities
+Tree (2): Total light at base = 1212.7 ==> total vigor = 18190.4
+49417 supported entities
+Tree (3): Total light at base = 1632.51 ==> total vigor = 24487.7
+55826 supported entities
+Tree (4): Total light at base = 1859.89 ==> total vigor = 27898.4
+65434 supported entities
+Tree (5): Total light at base = 2733.85 ==> total vigor = 41007.7
+114153 supported entities
+Tree (6): Total light at base = 2909.87 ==> total vigor = 43648
+115837 supported entities
+Tree (7): Total light at base = 3195.48 ==> total vigor = 47932.2
+117994 supported entities
+Tree (8): Total light at base = 2385.05 ==> total vigor = 35775.8
+96568 supported entities
+Tree (9): Total light at base = 3072.24 ==> total vigor = 46083.6
+118589 supported entities
+Tree (10): Total light at base = 3104.84 ==> total vigor = 46572.6
+124087 supported entities
+Tree (11): Total light at base = 3085.89 ==> total vigor = 46288.4
+111041 supported entities
+Tree (12): Total light at base = 2431.3 ==> total vigor = 36469.5
+101305 supported entities
+Tree (13): Total light at base = 2698.4 ==> total vigor = 40476
+103878 supported entities
+Tree (14): Total light at base = 2891.41 ==> total vigor = 43371.1
+118212 supported entities
+Tree (15): Total light at base = 2957.12 ==> total vigor = 44356.7
+110928 supported entities
+Tree (16): Total light at base = 2829.57 ==> total vigor = 42443.5
+105074 supported entities
+Tree (17): Total light at base = 2287.57 ==> total vigor = 34313.5
+93971 supported entities
+Tree (18): Total light at base = 2792.37 ==> total vigor = 41885.5
+105668 supported entities
+Tree (19): Total light at base = 3082.62 ==> total vigor = 46239.3
+115011 supported entities
+Tree (20): Total light at base = 2372.68 ==> total vigor = 35590.2
+79760 supported entities
+Tree (21): Total light at base = 1390.27 ==> total vigor = 20854.1
+46029 supported entities
+Tree (22): Total light at base = 1873.89 ==> total vigor = 28108.3
+68049 supported entities
+Tree (23): Total light at base = 1652.64 ==> total vigor = 24789.5
+65260 supported entities
+Tree (24): Total light at base = 1576.7 ==> total vigor = 23650.5
+64332 supported entities
+PRUNE (50)
+Produced 178065 PruneCaps
+GROW (51)
+Lambda now 0.50 (step 51, age 8)
+
+Nodes 43810 Branches 4083 N:B 10.7
+INTERPRET_POSITIONS (52)
+SET_POSITIONS (53)
+Current height of plant after 16 flushes is 601.7 cm
+Pruned 10714 entities
+End of Growing Flush 16 (year 8) (step 53)
+**************
+
+BHACCUMULATE (54)
+BHDISTRIBUTE (55)
+Tree (0): Total light at base = 1854.89 ==> total vigor = 27823.4
+69104 supported entities
+Tree (1): Total light at base = 1494.97 ==> total vigor = 22424.6
+54213 supported entities
+Tree (2): Total light at base = 1584.69 ==> total vigor = 23770.3
+51563 supported entities
+Tree (3): Total light at base = 1872.71 ==> total vigor = 28090.6
+71550 supported entities
+Tree (4): Total light at base = 2411.24 ==> total vigor = 36168.6
+78008 supported entities
+Tree (5): Total light at base = 3629.31 ==> total vigor = 54439.6
+144363 supported entities
+Tree (6): Total light at base = 3589.51 ==> total vigor = 53842.7
+154660 supported entities
+Tree (7): Total light at base = 4054.58 ==> total vigor = 60818.6
+166989 supported entities
+Tree (8): Total light at base = 3050.98 ==> total vigor = 45764.8
+126354 supported entities
+Tree (9): Total light at base = 4021.03 ==> total vigor = 60315.4
+162529 supported entities
+Tree (10): Total light at base = 3945.4 ==> total vigor = 59181
+165673 supported entities
+Tree (11): Total light at base = 3772.57 ==> total vigor = 56588.5
+160373 supported entities
+Tree (12): Total light at base = 3174.62 ==> total vigor = 47619.3
+131365 supported entities
+Tree (13): Total light at base = 3422.48 ==> total vigor = 51337.1
+145626 suppor<command-line>: error: missing '(' after predicate
+<command-line>: error: missing '(' after predicate
+g++ -c -fPIC -O3 lsys.ii
+g++ -shared -fPIC -Xlinker -Bsymbolic -o lsys.so lsys.o
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+Steps: 79
+READ (1)
+Creating Orchard Layout
+0 -800.00  0 -1400.00
+1 -400.00  0 -1400.00
+2 0.00  0 -1400.00
+3 400.00  0 -1400.00
+4 800.00  0 -1400.00
+5 -800.00  0 -700.00
+6 -400.00  0 -700.00
+7 0.00  0 -700.00
+8 400.00  0 -700.00
+9 800.00  0 -700.00
+10 -800.00  0 0.00
+11 -400.00  0 0.00
+12 0.00  0 0.00
+13 400.00  0 0.00
+14 800.00  0 0.00
+15 -800.00  0 700.00
+16 -400.00  0 700.00
+17 0.00  0 700.00
+18 400.00  0 700.00
+19 800.00  0 700.00
+20 -800.00  0 1400.00
+21 -400.00  0 1400.00
+22 0.00  0 1400.00
+23 400.00  0 1400.00
+24 800.00  0 1400.00
+Start READ phase part 2
+READ (2)
+Running TreeReader for plant 0
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 0
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 0
+********************
+Running TreeReader for plant 1
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 1
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 1
+********************
+Running TreeReader for plant 2
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 2
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 2
+********************
+Running TreeReader for plant 3
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 3
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 3
+********************
+Running TreeReader for plant 4
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 4
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - ex
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+it MTG reading loop
+
+Finsihed Processing plant 4
+********************
+Running TreeReader for plant 5
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 5
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 5
+********************
+Running TreeReader for plant 6
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 6
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 6
+********************
+Running TreeReader for plant 7
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 7
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 7
+********************
+Running TreeReader for plant 8
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 8
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 8
+********************
+Running TreeReader for plant 9
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 9
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 9
+********************
+Running TreeReader for plant 10
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBr
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+anches, on with the show for tree 10
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 10
+********************
+Running TreeReader for plant 11
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 11
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 11
+********************
+Running TreeReader for plant 12
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 12
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 12
+********************
+Running TreeReader for plant 13
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 13
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 13
+********************
+Running TreeReader for plant 14
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 14
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 14
+********************
+Running TreeReader for plant 15
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 15
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 15
+********************
+Running TreeReader for plant 16
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Proc
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+essing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 16
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 16
+********************
+Running TreeReader for plant 17
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 17
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 17
+********************
+Running TreeReader for plant 18
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 18
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 18
+********************
+Running TreeReader for plant 19
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 19
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 19
+********************
+Running TreeReader for plant 20
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 20
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 20
+********************
+Running TreeReader for plant 21
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 21
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+21
+********************
+Running TreeReader for plant 22
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 22
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 22
+********************
+Running TreeReader for plant 23
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 23
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 23
+********************
+Running TreeReader for plant 24
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 24
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 24
+********************
+READ phase completed
+
+Adjusting Widths (3)
+Width Adjust complete
+Width at base is 2.778 cm
+
+INTERPRET_POSITIONS (4)
+SET_POSITIONS (5)
+Current height of plant after 8 flushes is 223.2 cm
+Pruned 0 entities
+End of Growing Flush 8 (year 4) (step 5)
+**************
+
+BHACCUMULATE (6)
+BHDISTRIBUTE (7)
+Tree (0): Total light at base = 104.371 ==> total vigor = 1565.56
+4138 supported entities
+Tree (1): Total light at base = 80.9509 ==> total vigor = 1214.26
+4130 supported entities
+Tree (2): Total light at base = 81.7592 ==> total vigor = 1226.39
+4130 supported entities
+Tree (3): Total light at base = 83.0626 ==> total vigor = 1245.94
+4130 supported entities
+Tree (4): Total light at base = 82.7907 ==> total vigor = 1241.86
+4130 supported entities
+Tree (5): Total light at base = 100.147 ==> total vigor = 1502.21
+4130 supported entities
+Tree (6): Total light at base = 93.98 ==> total vigor = 1409.7
+4130 supported entities
+Tree (7): Total light at base = 90.9783 ==> total vigor = 1364.68
+4130 supported entities
+Tree (8): Total light at base = 100.441 ==> total vigor = 1506.62
+4130 supported entities
+Tree (9): Total light at base = 94.7112 ==> total vigor = 1420.67
+4130 supported entities
+Tree (10): Total light at base = 86.8324 ==> total vigor = 1302.49
+4130 supported entities
+Tree (11): Total light at base = 84.1725 ==> total vigor = 1262.59
+4130 supported entities
+Tree (12): Total light at base = 80.3156 ==> total vigor = 1204.73
+4130 supported entities
+Tree (13): Total light at base = 78.7874 ==> total vigor = 1181.81
+4130 supported entities
+Tree (14): Total light at base = 91.8833 ==> total vigor = 1378.25
+4130 supported entities
+Tree (15): Total light at base = 88.1916 ==> total vigor = 1322.87
+4130 supported entities
+Tree (16): Total light at base = 76.9807 ==> total vigor = 1154.71
+4130 supported entities
+Tree (17): Total light at base = 91.1768 ==> total vigor = 1367.65
+4130 supported entities
+Tree (18): Total light at base = 83.6752 ==> total vigor = 1255.13
+4130 supported entities
+Tree (19): Total light at base = 91.2807 ==> total vigor = 1369.21
+4130 supported entities
+Tree (20): Total light at base = 89.6996 ==> total vigor = 1345.49
+4130 supported entities
+Tree (21): Total light at base = 87.4979 ==> total vigor = 1312.47
+4130 supported entities
+Tree (22): Total light at base = 83.9018 ==> total vigor = 1258.53
+4130 supported entities
+Tree (23): Total light at base = 89.2212 ==> total vigor = 1338.32
+4130 supported entities
+Tree (24): Total light at base = 94.8775 ==> total vigor = 1423.16
+4130 supported entities
+PRUNE (8)
+Produced 7931 PruneCaps
+GROW (9)
+Lambda now 0.50 (step 9, age 4)
+
+Nodes 1563 Branches 288 N:B 5.4
+INTERPRET_POSITIONS (10)
+SET_POSITIONS (11)
+Current height of plant after 9 flushes is 262.4 cm
+Pruned 440 entities
+End of Growing Flush 9 (year 4) (step 11)
+**************
+
+BHACCUMULATE (12)
+BHDISTRIBUTE (13)
+Tree (0): Total light at base = 216.767 ==> total vigor = 3251.5
+5236 supported entities
+Tree (1): Total light at base = 204.759 ==> total vigor = 3071.38
+3983 supported entities
+Tree (2): Total light at base = 212.392 ==> total vigor = 3185.88
+4106 supported entities
+Tree (3): Total light at base = 184.327 ==> total vigor = 2764.9
+4407 supported entities
+Tree (4): Total light at base = 222.658 ==> total vigor = 3339.87
+4897 supported entities
+Tree (5): Total light at base = 198.013 ==> total vigor = 2970.2
+5042 supported entities
+Tree (6): Total light at base = 215.277 ==> total vigor = 3229.15
+5080 supported entities
+Tree (7): Total light at base = 251.378 ==> total vigor = 3770.67
+4972 supported entities
+Tree (8): Total light at base = 229.561 ==> total vigor = 3443.42
+5239 supported entities
+Tree (9): Total light at base = 209.484 ==> total vigor = 3142.25
+4758 supported entities
+Tree (10): Total light at base = 225.309 ==> total vigor = 3379.63
+4620 supported entities
+Tree (11): Total light at base = 198.129 ==> total vigor = 2971.94
+4153 supported entities
+Tree (12): Total light at base = 201.929 ==> total vigor = 3028.94
+4490 supported entities
+Tree (13): Total light at base = 197.642 ==> total vigor = 2964.63
+4278 supported entities
+Tree (14): Total light at base = 229.274 ==> total vigor = 3439.11
+4791 supported entities
+Tree (15): Total light at base = 205.904 ==> total vigor = 3088.56
+4883 supported entities
+Tree (16): Total light at base = 154.098 ==> total vigor = 2311.47
+4055 supported entities
+Tree (17): Total light at base = 193.893 ==> total vigor = 2908.4
+4792 supported entities
+Tree (18): Total light at base = 211.638 ==> total vigor = 3174.56
+4599 supported entities
+Tree (19): Total light at base = 216.444 ==> total vigor = 3246.67
+4640 supported entities
+Tree (20): Total light at base = 210.799 ==> total vigor = 3161.98
+4733 supported entities
+Tree (21): Total light at base = 230.188 ==> total vigor = 3452.82
+4632 supported entities
+Tree (22): Total light at base = 190.136 ==> total vigor = 2852.04
+4750 supported entities
+Tree (23): Total light at base = 193.017 ==> total vigor = 2895.26
+4823 supported entities
+Tree (24): Total light at base = 228.029 ==> total vigor = 3420.44
+5270 supported entities
+PRUNE (14)
+Produced 4594 PruneCaps
+GROW (15)
+Lambda now 0.50 (step 15, age 5)
+
+Nodes 2667 Branches 315 N:B 8.5
+INTERPRET_POSITIONS (16)
+SET_POSITIONS (17)
+Current height of plant after 10 flushes is 308.7 cm
+Pruned 294 entities
+End of Growing Flush 10 (year 5) (step 17)
+**************
+
+BHACCUMULATE (18)
+BHDISTRIBUTE (19)
+Tree (0): Total light at base = 312.23 ==> total vigor = 4683.45
+9928 supported entities
+Tree (1): Total light at base = 365.301 ==> total vigor = 5479.52
+9624 supported entities
+Tree (2): Total light at base = 387.7 ==> total vigor = 5815.5
+9049 supported entities
+Tree (3): Total light at base = 321.767 ==> total vigor = 4826.5
+9136 supported entities
+Tree (4): Total light at base = 412.542 ==> total vigor = 6188.13
+10333 supported entities
+Tree (5): Total light at base = 373.821 ==> total vigor = 5607.31
+9619 supported entities
+Tree (6): Total light at base = 384.371 ==> total vigor = 5765.56
+9818 supported entities
+Tree (7): Total light at base = 405.399 ==> total vigor = 6080.99
+11493 supported entities
+Tree (8): Total light at base = 368.996 ==> total vigor = 5534.94
+10702 supported entities
+Tree (9): Total light at base = 359.179 ==> total vigor = 5387.68
+9665 supported entities
+Tree (10): Total light at base = 448.51 ==> total vigor = 6727.65
+10257 supported entities
+Tree (11): Total light at base = 387.037 ==> total vigor = 5805.56
+9063 supported entities
+Tree (12): Total light at base = 385.689 ==> total vigor = 5785.34
+9438 supported entities
+Tree (13): Total light at base = 337.656 ==> total vigor = 5064.84
+9558 supported entities
+Tree (14): Total light at base = 415.369 ==> total vigor = 6230.54
+11127 supported entities
+Tree (15): Total light at base = 342.084 ==> total vigor = 5131.27
+10336 supported entities
+Tree (16): Total light at base = 301.396 ==> total vigor = 4520.94
+7814 supported entities
+Tree (17): Total light at base = 299.731 ==> total vigor = 4495.96
+9402 supported entities
+Tree (18): Total light at base = 366.468 ==> total vigor = 5497.01
+9675 supported entities
+Tree (19): Total light at base = 372.255 ==> total vigor = 5583.83
+10029 supported entities
+Tree (20): Total light at base = 371.931 ==> total vigor = 5578.96
+9884 supported entities
+Tree (21): Total light at base = 372.73 ==> total vigor = 5590.95
+10304 supported entities
+Tree (22): Total light at base = 333.705 ==> total vigor = 5005.58
+8965 supported entities
+Tree (23): Total light at base = 430.716 ==> total vigor = 6460.75
+9742 supported entities
+Tree (24): Total light at base = 396.051 ==> total vigor = 5940.77
+10904 supported entities
+PRUNE (20)
+Produced 13253 PruneCaps
+GROW (21)
+Lambda now 0.50 (step 21, age 5)
+
+Nodes 5072 Branches 493 N:B 10.3
+INTERPRET_POSITIONS (22)
+SET_POSITIONS (23)
+Current height of plant after 11 flushes is 357.6 cm
+Pruned 599 entities
+End of Growing Flush 11 (year 5) (step 23)
+**************
+
+BHACCUMULATE (24)
+BHDISTRIBUTE (25)
+Tree (0): Total light at base = 558.372 ==> total vigor = 8375.57
+16246 supported entities
+Tree (1): Total light at base = 637.438 ==> total vigor = 9561.58
+18031 supported entities
+Tree (2): Total light at base = 660.591 ==> total vigor = 9908.86
+18353 supported entities
+Tree (3): Total light at base = 550.152 ==> total vigor = 8252.28
+16863 supported entities
+Tree (4): Total light at base = 612.556 ==> total vigor = 9188.33
+19947 supported entities
+Tree (5): Total light at base = 611.263 ==> total vigor = 9168.95
+17596 supported entities
+Tree (6): Total light at base = 682.84 ==> total vigor = 10242.6
+18094 supported entities
+Tree (7): Total light at base = 689.591 ==> total vigor = 10343.9
+20226 supported entities
+Tree (8): Total light at base = 661.735 ==> total vigor = 9926.02
+18546 supported entities
+Tree (9): Total light at base = 653.214 ==> total vigor = 9798.21
+17738 supported entities
+Tree (10): Total light at base = 806.699 ==> total vigor = 12100.5
+20168 supported entities
+Tree (11): Total light at base = 692.817 ==> total vigor = 10392.3
+17926 supported entities
+Tree (12): Total light at base = 634.731 ==> total vigor = 9520.96
+17787 supported entities
+Tree (13): Total light at base = 588.481 ==> total vigor = 8827.21
+16452 supported entities
+Tree (14): Total light at base = 688.508 ==> total vigor = 10327.6
+19450 supported entities
+Tree (15): Total light at base = 607.792 ==> total vigor = 9116.88
+17267 supported entities
+Tree (16): Total light at base = 529.628 ==> total vigor = 7944.43
+14669 supported entities
+Tree (17): Total light at base = 558.49 ==> total vigor = 8377.36
+15458 supported entities
+Tree (18): Total light at base = 592.315 ==> total vigor = 8884.72
+17031 supported entities
+Tree (19): Total light at base = 594.162 ==> total vigor = 8912.43
+17643 supported entities
+Tree (20): Total light at base = 655.639 ==> total vigor = 9834.59
+18631 supported entities
+Tree (21): Total light at base = 606.773 ==> total vigor = 9101.59
+18294 supported entities
+Tree (22): Total light at base = 631.802 ==> total vigor = 9477.04
+16557 supported entities
+Tree (23): Total light at base = 678.072 ==> total vigor = 10171.1
+19822 supported entities
+Tree (24): Total light at base = 675.08 ==> total vigor = 10126.2
+19251 supported entities
+PRUNE (26)
+Produced 20790 PruneCaps
+GROW (27)
+Lambda now 0.50 (step 27, age 6)
+
+Nodes 8900 Branches 818 N:B 10.9
+INTERPRET_POSITIONS (28)
+SET_POSITIONS (29)
+Current height of plant after 12 flushes is 407.3 cm
+Pruned 1303 entities
+End of Growing Flush 12 (year 6) (step 29)
+**************
+
+BHACCUMULATE (30)
+BHDISTRIBUTE (31)
+Tree (0): Total light at base = 877.015 ==> total vigor = 13155.2
+29229 supported entities
+Tree (1): Total light at base = 1087.35 ==> total vigor = 16310.2
+31505 supported entities
+Tree (2): Total light at base = 976.069 ==> total vigor = 14641
+32345 supported entities
+Tree (3): Total light at base = 971.76 ==> total vigor = 14576.4
+28392 supported entities
+Tree (4): Total light at base = 993.399 ==> total vigor = 14901
+30814 supported entities
+Tree (5): Total light at base = 953.532 ==> total vigor = 14303
+31357 supported entities
+Tree (6): Total light at base = 1092.49 ==> total vigor = 16387.4
+33865 supported entities
+Tree (7): Total light at base = 1159.11 ==> total vigor = 17386.7
+33625 supported entities
+Tree (8): Total light at base = 1045.17 ==> total vigor = 15677.6
+33347 supported entities
+Tree (9): Total light at base = 993.142 ==> total vigor = 14897.1
+32922 supported entities
+Tree (10): Total light at base = 1281.97 ==> total vigor = 19229.6
+39017 supported entities
+Tree (11): Total light at base = 951.08 ==> total vigor = 14266.2
+33514 supported entities
+Tree (12): Total light at base = 1064.07 ==> total vigor = 15961
+30236 supported entities
+Tree (13): Total light at base = 1035.55 ==> total vigor = 15533.2
+29168 supported entities
+Tree (14): Total light at base = 1013.58 ==> total vigor = 15203.7
+33967 supported entities
+Tree (15): Total light at base = 951.451 ==> total vigor = 14271.8
+31723 supported entities
+Tree (16): Total light at base = 846.86 ==> total vigor = 12702.9
+27126 supported entities
+Tree (17): Total light at base = 951.027 ==> total vigor = 14265.4
+28241 supported entities
+Tree (18): Total light at base = 918.036 ==> total vigor = 13770.5
+30457 supported entities
+Tree (19): Total light at base = 986.39 ==> total vigor = 14795.8
+28990 supported entities
+Tree (20): Total light at base = 1029.96 ==> total vigor = 15449.5
+34223 supported entities
+Tree (21): Total light at base = 944.827 ==> total vigor = 14172.4
+31952 supported entities
+Tree (22): Total light at base = 979.159 ==> total vigor = 14687.4
+31790 supported entities
+Tree (23): Total light at base = 979.392 ==> total vigor = 14690.9
+33721 supported entities
+Tree (24): Total light at base = 1005.2 ==> total vigor = 15078
+34104 supported entities
+PRUNE (32)
+Produced 43477 PruneCaps
+GROW (33)
+Lambda now 0.50 (step 33, age 6)
+
+Nodes 15155 Branches 1374 N:B 11.0
+INTERPRET_POSITIONS (34)
+SET_POSITIONS (35)
+Current height of plant after 13 flushes is 462.1 cm
+Pruned 2395 entities
+End of Growing Flush 13 (year 6) (step 35)
+**************
+
+BHACCUMULATE (36)
+BHDISTRIBUTE (37)
+Tree (0): Total light at base = 1265.33 ==> total vigor = 18980
+45770 supported entities
+Tree (1): Total light at base = 1647.83 ==> total vigor = 24717.5
+53198 supported entities
+Tree (2): Total light at base = 1491.05 ==> total vigor = 22365.7
+49122 supported entities
+Tree (3): Total light at base = 1498.41 ==> total vigor = 22476.1
+49524 supported entities
+Tree (4): Total light at base = 1447.77 ==> total vigor = 21716.6
+51553 supported entities
+Tree (5): Total light at base = 1483.04 ==> total vigor = 22245.6
+50569 supported entities
+Tree (6): Total light at base = 1742.67 ==> total vigor = 26140.1
+54851 supported entities
+Tree (7): Total light at base = 1719.09 ==> total vigor = 25786.3
+57530 supported entities
+Tree (8): Total light at base = 1583.5 ==> total vigor = 23752.6
+53223 supported entities
+Tree (9): Total light at base = 1427.8 ==> total vigor = 21417.1
+50195 supported entities
+Tree (10): Total light at base = 1864.77 ==> total vigor = 27971.6
+66030 supported entities
+Tree (11): Total light at base = 1410.12 ==> total vigor = 21151.8
+47794 supported entities
+Tree (12): Total light at base = 1594.81 ==> total vigor = 23922.1
+50776 supported entities
+Tree (13): Total light at base = 1578.93 ==> total vigor = 23683.9
+49652 supported entities
+Tree (14): Total light at base = 1500.33 ==> total vigor = 22504.9
+52885 supported entities
+Tree (15): Total light at base = 1500.23 ==> total vigor = 22503.5
+50351 supported entities
+Tree (16): Total light at base = 1231.63 ==> total vigor = 18474.5
+44210 supported entities
+Tree (17): Total light at base = 1384.87 ==> total vigor = 20773
+49224 supported entities
+Tree (18): Total light at base = 1357.89 ==> total vigor = 20368.3
+49233 supported entities
+Tree (19): Total light at base = 1578.7 ==> total vigor = 23680.6
+47271 supported entities
+Tree (20): Total light at base = 1503.19 ==> total vigor = 22547.9
+52699 supported entities
+Tree (21): Total light at base = 1316.71 ==> total vigor = 19750.6
+49062 supported entities
+Tree (22): Total light at base = 1475.22 ==> total vigor = 22128.2
+52097 supported entities
+Tree (23): Total light at base = 1448.63 ==> total vigor = 21729.5
+52034 supported entities
+Tree (24): Total light at base = 1496.92 ==> total vigor = 22453.9
+53254 supported entities
+PRUNE (38)
+Produced 75439 PruneCaps
+GROW (39)
+Lambda now 0.50 (step 39, age 7)
+
+Nodes 24646 Branches 2265 N:B 10.9
+INTERPRET_POSITIONS (40)
+SET_POSITIONS (41)
+Current height of plant after 14 flushes is 514.8 cm
+Pruned 3969 entities
+End of Growing Flush 14 (year 7) (step 41)
+**************
+
+BHACCUMULATE (42)
+BHDISTRIBUTE (43)
+Tree (0): Total light at base = 1750.97 ==> total vigor = 26264.6
+67261 supported entities
+Tree (1): Total light at base = 2374.61 ==> total vigor = 35619.1
+82848 supported entities
+Tree (2): Total light at base = 2083.54 ==> total vigor = 31253.1
+75094 supported entities
+Tree (3): Total light at base = 2059.64 ==> total vigor = 30894.7
+76574 supported entities
+Tree (4): Total light at base = 2113.17 ==> total vigor = 31697.5
+73793 supported entities
+Tree (5): Total light at base = 2054.44 ==> total vigor = 30816.7
+76708 supported entities
+Tree (6): Total light at base = 2618.3 ==> total vigor = 39274.5
+87239 supported entities
+Tree (7): Total light at base = 2378.29 ==> total vigor = 35674.3
+87622 supported entities
+Tree (8): Total light at base = 2198.11 ==> total vigor = 32971.7
+81646 supported entities
+Tree (9): Total light at base = 1952.69 ==> total vigor = 29290.4
+76259 supported entities
+Tree (10): Total light at base = 2696.16 ==> total vigor = 40442.4
+97309 supported entities
+Tree (11): Total light at base = 1951.08 ==> total vigor = 29266.3
+74110 supported entities
+Tree (12): Total light at base = 2070.41 ==> total vigor = 31056.2
+82230 supported entities
+Tree (13): Total light at base = 2161.17 ==> total vigor = 32417.6
+80389 supported entities
+Tree (14): Total light at base = 2002.62 ==> total vigor = 30039.3
+78872 supported entities
+Tree (15): Total light at base = 1994.25 ==> total vigor = 29913.7
+76386 supported entities
+Tree (16): Total light at base = 1673.5 ==> total vigor = 25102.5
+66330 supported entities
+Tree (17): Total light at base = 1920.36 ==> total vigor = 28805.4
+71908 supported entities
+Tree (18): Total light at base = 2047.78 ==> total vigor = 30716.7
+69020 supported entities
+Tree (19): Total light at base = 2266.79 ==> total vigor = 34001.9
+79295 supported entities
+Tree (20): Total light at base = 1890.4 ==> total vigor = 28355.9
+79133 supported entities
+Tree (21): Total light at base = 1959.48 ==> total vigor = 29392.2
+70008 supported entities
+Tree (22): Total light at base = 2124.04 ==> total vigor = 31860.6
+78408 supported entities
+Tree (23): Total light at base = 2063.3 ==> total vigor = 30949.5
+77508 supported entities
+Tree (24): Total light at base = 2036.45 ==> total vigor = 30546.8
+77333 supported entities
+PRUNE (44)
+Produced 124407 PruneCaps
+GROW (45)
+Lambda now 0.50 (step 45, age 7)
+
+Nodes 36001 Branches 3338 N:B 10.8
+INTERPRET_POSITIONS (46)
+SET_POSITIONS (47)
+Current height of plant after 15 flushes is 568.2 cm
+Pruned 8707 entities
+End of Growing Flush 15 (year 7) (step 47)
+**************
+
+BHACCUMULATE (48)
+BHDISTRIBUTE (49)
+Tree (0): Total light at base = 2464.78 ==> total vigor = 36971.7
+94355 supported entities
+Tree (1): Total light at base = 3245.57 ==> total vigor = 48683.5
+120561 supported entities
+Tree (2): Total light at base = 2920.96 ==> total vigor = 43814.3
+108643 supported entities
+Tree (3): Total light at base = 2937.08 ==> total vigor = 44056.2
+108828 supported entities
+Tree (4): Total light at base = 2820.02 ==> total vigor = 42300.3
+107852 supported entities
+Tree (5): Total light at base = 2783.79 ==> total vigor = 41756.8
+110277 supported entities
+Tree (6): Total light at base = 3570.6 ==> total vigor = 53559
+131445 supported entities
+Tree (7): Total light at base = 3028.41 ==> total vigor = 45426.2
+120491 supported entities
+Tree (8): Total light at base = 2911.91 ==> total vigor = 43678.6
+114723 supported entities
+Tree (9): Total light at base = 2695.17 ==> total vigor = 40427.5
+105021 supported entities
+Tree (10): Total light at base = 3501.02 ==> total vigor = 52515.4
+139527 supported entities
+Tree (11): Total light at base = 2511.68 ==> total vigor = 37675.3
+103889 supported entities
+Tree (12): Total light at base = 2686.58 ==> total vigor = 40298.8
+108389 supported entities
+Tree (13): Total light at base = 2873.85 ==> total vigor = 43107.8
+113734 supported entities
+Tree (14): Total light at base = 2659.33 ==> total vigor = 39890
+107021 supported entities
+Tree (15): Total light at base = 2743.3 ==> total vigor = 41149.5
+107347 supported entities
+Tree (16): Total light at base = 2226.26 ==> total vigor = 33393.9
+89535 supported entities
+Tree (17): Total light at base = 2703.03 ==> total vigor = 40545.4
+102159 supported entities
+Tree (18): Total light at base = 2693.95 ==> total vigor = 40409.3
+106990 supported entities
+Tree (19): Total light at base = 2958.44 ==> total vigor = 44376.6
+112972 supported entities
+Tree (20): Total light at base = 2593.23 ==> total vigor = 38898.5
+101325 supported entities
+Tree (21): Total light at base = 2577.83 ==> total vigor = 38667.5
+104738 supported entities
+Tree (22): Total light at base = 2602.11 ==> total vigor = 39031.6
+111343 supported entities
+Tree (23): Total light at base = 2752.56 ==> total vigor = 41288.4
+110838 supported entities
+Tree (24): Total light at base = 2751.39 ==> total vigor = 41270.8
+107546 supported entities
+PRUNE (50)
+Produced 182691 PruneCaps
+GROW (51)
+Lambda now 0.50 (step 51, age 8)
+
+Nodes 46984 Branches 4380 N:B 10.7
+INTERPRET_POSITIONS (52)
+SET_POSITIONS (53)
+Current height of plant after 16 flushes is 627.6 cm
+Pruned 10821 entities
+End of Growing Flush 16 (year 8) (step 53)
+**************
+
+BHACCUMULATE (54)
+BHDISTRIBUTE (55)
+Tree (0): Total light at base = 3121.01 ==> total vigor = 46815.1
+133293 supported entities
+Tree (1): Total light at base = 4093.95 ==> total vigor = 61409.2
+169012 supported entities
+Tree (2): Total light at base = 3738.39 ==> total vigor = 56075.9
+152154 supported entities
+Tree (3): Total light at base = 3880.42 ==> total vigor = 58206.3
+148343 supported entities
+Tree (4): Total light at base = 3731.19 ==> total vigor = 55967.8
+149089 supported entities
+Tree (5): Total light at base = 3572.34 ==> total vigor = 53585.1
+151789 supported entities
+Tree (6): Total light at base = 4492.97 ==> total vigor = 67394.6
+178449 supported entities
+Tree (7): Total light at base = 3753.48 ==> total vigor = 56302.2
+160394 supported entities
+Tree (8): Total light at base = 3675.16 ==> total vigor = 55127.4
+155225 supported entities
+Tree (9): Total light at base = 3440.46 ==> total vigor = 51607
+145758 supported entities
+Tree (10): Total light at base = 4472.76 ==> total vigor = 67091.4
+185785 supported entities
+Tree (11): Total light at base = 3193.05 ==> total vigor = 47895.7
+135537 supported entities
+Tree (12): Total light at base = 3463.93 ==> total vigor = 51958.9
+143465 supported entities
+Tree (13): Total light at base = 3773 ==> total vigor = 56595.1
+152764 supported entities
+Tree (14): Total light at base = 3339.71 ==> total vigor = 50095.7
+140235 supported entities
+Tree (15): Total light at base = 3441.37 ==> total vigor = 51620.5
+146127 supported entities
+Tree (16): Total light at base = 2595.97 ==> total vigor = 38939.5
+120209 supported entities
+Tree (17): Total light at base = 3595.93 ==> total vigor = 53939
+143456 supported entities
+Tree (18): Total light at base = 3497.87 ==> total vigor = 52468
+145365 supported entities
+Tree (19): Total light at base = 3816.11 ==> total vigor = 57241.7
+154960 supported entities
+Tree (20): Total light at base = 3375.51 ==> total vigor = 50632.6
+139493 supported entities
+Tree (21): Total light at base = 3234.32 ==> total vigor = 48514.8
+136674 supported entities
+Tree (22): Total light at base = 3387.55 ==> total vigor = 50813.3
+140011 supported entities
+Tree (23): Total light at base = 3451.73 ==> total vigor = 51776
+147407 supported entities
+Tree (24): Total light at base = 3593.33 ==> total vigor = 53900
+145107 supported entities
+PRUNE (56)
+Produced 262237 PruneCaps
+GROW (57)
+Lambda now 0.50 (step 57, age 8)
+
+Nodes 61689 Branches 5805 N:B 10.6
+INTERPRET_POSITIONS (58)
+SET_POSITIONS (59)
+Current height of plant after 17 flushes is 680.6 cm
+Pruned 15044 entities
+End of Growing Flush 17 (year 8) (step 59)
+**************
+
+BHACCUMULATE (60)
+BHDISTRIBUTE (61)
+Tree (0): Total light at base = 4117.65 ==> total vigor = 61764.8
+165298 supported entities
+Tree (1): Total light at base = 4932.38 ==> total vigor = 73985.7
+210293 supported entities
+Tree (2): Total light at base = 4482.34 ==> total vigor = 67235.1
+200315 supported entities
+Tree (3): Total light at base = 4833.63 ==> total vigor = 72504.5
+198152 supported entities
+Tree (4): Total light at base = 4723.82 ==> total vigor = 70857.4
+194560 supported entities
+Tree (5): Total light at base = 4319.23 ==> total vigor = 64788.5
+194191 supported entities
+Tree (6): Total light at base = 5537.51 ==> total vigor = 83062.7
+228157 supported entities
+Tree (7): Total light at base = 4657.44 ==> total vigor = 69861.5
+200791 supported entities
+Tree (8): Total light at base = 4558.57 ==> total vigor = 68378.6
+194404 supported entities
+Tree (9): Total light at base = 4452.92 ==> total vigor = 66793.8
+188401 supported entities
+Tree (10): Total light at base = 5666.94 ==> total vigor = 85004
+234464 supported entities
+Tree (11): Total light at base = 4017.52 ==> total vigor = 60262.8
+169563 supported entities
+Tree (12): Total light at base = 4315.9 ==> total vigor = 64738.5
+185009 supported entities
+Tree (13): Total light at base = 4601.23 ==> total vigor = 69018.4
+199372 supported entities
+Tree (14): Total light at base = 4246.59 ==> total vigor = 63698.9
+177774 supported entities
+Tree (15): Total light at base = 4434.33 ==> total vigor = 66514.9
+186041 supported entities
+Tree (16): Total light at base = 3236.6 ==> total vigor = 48549
+146582 supported entities
+Tree (17): Total light at base = 4472.9 ==> total vigor = 67093.5
+194920 supported entities
+Tree (18): Total light at base = 4183.5 ==> total vigor = 62752.6
+189096 supported entities
+Tree (19): Total light at base = 4754.71 ==> total vigor = 71320.7
+194745 supported entities
+Tree (20): Total light at base = 4483.56 ==> total vigor = 67253.4
+177391 supported entities
+Tree (21): Total light at base = 4013.56 ==> total vigor = 60203.4
+174038 supported entities
+Tree (22): Total light at base = 4134.14 ==> total vigor = 62012.2
+185749 supported entities
+Tree (23): Total light at base = 4203.3 ==> total vigor = 63049.5
+181310 supported entities
+Tree (24): Total light at base = 4580.73 ==> total vigor = 68711
+189238 supported entities
+PRUNE (62)
+Produced 344824 PruneCaps
+GROW (63)
+Lambda now 0.40 (step 63, age 9)
+
+Nodes 77752 Branches 7374 N:B 10.5
+INTERPRET_POSITIONS (64)
+SET_POSITIONS (65)
+Current height of plant after 18 flushes is 726.1 cm
+Pruned 22099 entities
+End of Growing Flush 18 (year 9) (step 65)
+**************
+
+BHACCUMULATE (66)
+BHDISTRIBUTE (67)
+Tree (0): Total light at base = 4981.34 ==> total vigor = 74720.1
+219253 supported entities
+Tree (1): Total light at base = 5869.14 ==> total vigor = 88037.2
+261509 supported entities
+Tree (2): Total light at base = 5566.52 ==> total vigor = 83497.9
+232377 supported entities
+Tree (3): Total light at base = 5496.48 ==> total vigor = 82447.2
+251552 supported entities
+Tree (4): Total light at base = 5917.47 ==> total vigor = 88762
+252077 supported entities
+Tree (5): Total light at base = 5441.49 ==> total vigor = 81622.4
+232721 supported entities
+Tree (6): Total light at base = 6746.29 ==> total vigor = 101194
+282334 supported entities
+Tree (7): Total light at base = 5631.56 ==> total vigor = 84473.5
+237691 supported entities
+Tree (8): Total light at base = 5391.17 ==> total vigor = 80867.5
+242285 supported entities
+Tree (9): Total light at base = 5560.7 ==> total vigor = 83410.5
+243587 supported entities
+Tree (10): Total light at base = 7010.04 ==> total vigor = 105151
+292475 supported entities
+Tree (11): Total light at base = 4785.72 ==> total vigor = 71785.8
+213412 supported entities
+Tree (12): Total light at base = 5138.86 ==> total vigor = 77082.9
+220620 supported entities
+Tree (13): Total light at base = 5828.84 ==> total vigor = 87432.6
+240993 supported entities
+Tree (14): Total light at base = 5395.59 ==> total vigor = 80933.9
+228419 supported entities
+Tree (15): Total light at base = 5524.8 ==> total vigor = 82872
+234115 supported entities
+Tree (16): Total light at base = 3802.81 ==> total vigor = 57042.2
+175766 supported entities
+Tree (17): Total light at base = 5633.82 ==> total vigor = 84507.3
+234792 supported entities
+Tree (18): Total light at base = 4985.68 ==> total vigor = 74785.1
+225736 supported entities
+Tree (19): Total light at base = 5934.69 ==> total vigor = 89020.4
+254616 supported entities
+Tree (20): Total light at base = 5508.07 ==> total vigor = 82621.1
+240387 supported entities
+Tree (21): Total light at base = 4859.44 ==> total vigor = 72891.5
+217889 supported entities
+Tree (22): Total light at base = 4931.58 ==> total vigor = 73973.7
+223065 supported entities
+Tree (23): Total light at base = 5267.22 ==> total vigor = 79008.2
+227039 supported entities
+Tree (24): Total light at base = 5720.59 ==> total vigor = 85808.9
+248865 supported entities
+PRUNE (68)
+Produced 470856 PruneCaps
+GROW (69)
+Lambda now 0.40 (step 69, age 9)
+
+Nodes 89739 Branches 9090 N:B 9.9
+INTERPRET_POSITIONS (70)
+SET_POSITIONS (71)
+Current height of plant after 19 flushes is 765.0 cm
+Pruned 27268 entities
+End of Growing Flush 19 (year 9) (step 71)
+**************
+
+BHACCUMULATE (72)
+BHDISTRIBUTE (73)
+Tree (0): Total light at base = 6275.28 ==> total vigor = 94129.3
+240925 supported entities
+Tree (1): Total light at base = 7030.89 ==> total vigor = 105463
+286317 supported entities
+Tree (2): Total light at base = 6513.29 ==> total vigor = 97699.3
+257643 supported entities
+Tree (3): Total light at base = 6768.6 ==> total vigor = 101529
+259490 supported entities
+Tree (4): Total light at base = 7782.05 ==> total vigor = 116731
+278914 supported entities
+Tree (5): Total light at base = 6941.67 ==> total vigor = 104125
+253363 supported entities
+Tree (6): Total light at base = 8624.69 ==> total vigor = 129370
+303717 supported entities
+Tree (7): Total light at base = 6859.74 ==> total vigor = 102896
+265645 supported entities
+Tree (8): Total light at base = 6584.87 ==> total vigor = 98773
+262854 supported entities
+Tree (9): Total light at base = 7217.61 ==> total vigor = 108264
+263478 supported entities
+Tree (10): Total light at base = 8638.72 ==> total vigor = 129581
+331950 supported entities
+Tree (11): Total light at base = 6057.69 ==> total vigor = 90865.3
+228140 supported entities
+Tree (12): Total light at base = 6297.52 ==> total vigor = 94462.7
+247506 supported entities
+Tree (13): Total light at base = 7380.26 ==> total vigor = 110704
+278367 supported entities
+Tree (14): Total light at base = 6477.72 ==> total vigor = 97165.8
+245448 supported entities
+Tree (15): Total light at base = 6877.99 ==> total vigor = 103170
+263499 supported entities
+Tree (16): Total light at base = 4628.89 ==> total vigor = 69433.3
+185939 supported entities
+Tree (17): Total light at base = 6979.63 ==> total vigor = 104695
+267352 supported entities
+Tree (18): Total light at base = 5959.1 ==> total vigor = 89386.5
+235734 supported entities
+Tree (19): Total light at base = 7391.19 ==> total vigor = 110868
+276595 supported entities
+Tree (20): Total light at base = 7256.56 ==> total vigor = 108848
+261024 supported entities
+Tree (21): Total light at base = 6211.04 ==> total vigor = 93165.6
+232429 supported entities
+Tree (22): Total light at base = 6019.73 ==> total vigor = 90296
+235476 supported entities
+Tree (23): Total light at base = 6453.14 ==> total vigor = 96797
+255668 supported entities
+Tree (24): Total light at base = 7142.29 ==> total vigor = 107134
+261777 supported entities
+PRUNE (74)
+Produced 430281 PruneCaps
+GROW (75)
+Lambda now 0.30 (step 75, age 10)
+
+Nodes 103867 Branches 11210 N:B 9.3
+INTERPRET_POSITIONS (76)
+SET_POSITIONS (77)
+
+Opening XYZ file
+
+Opening MTG file
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+Current height of plant after 20 flushes is 814.6 cm
+Pruned 26489 entities
+End of Growing Flush 20 (year 10) (step 77)
+**************
+
+Closed XYZ file
+
+Closed MTG ModelMTG.mtg file
+
+
+ Highest nodenum 5071948
+BHACCUMULATE (78)
+BHDISTRIBUTE (79)
+Tree (0): Total light at base = 7598.02 ==> total vigor = 113970
+309164 supported entities
+Tree (1): Total light at base = 8197.96 ==> total vigor = 122969
+338717 supported entities
+Tree (2): Total light at base = 7487.89 ==> total vigor = 112318
+317415 supported entities
+Tree (3): Total light at base = 8002.35 ==> total vigor = 120035
+319404 supported entities
+Tree (4): Total light at base = 9802.93 ==> total vigor = 147044
+375796 supported entities
+Tree (5): Total light at base = 8092.3 ==> total vigor = 121385
+340573 supported entities
+Tree (6): Total light at base = 10266.6 ==> total vigor = 154000
+398997 supported entities
+Tree (7): Total light at base = 8041.41 ==> total vigor = 120621
+324564 supported entities
+Tree (8): Total light at base = 7509.34 ==> total vigor = 112640
+312264 supported entities
+Tree (9): Total light at base = 8772.66 ==> total vigor = 131590
+351590 supported entities
+Tree (10): Total light at base = 10522.8 ==> total vigor = 157842
+418745 supported entities
+Tree (11): Total light at base = 7306.75 ==> total vigor = 109601
+294541 supported entities
+Tree (12): Total light at base = 7591.64 ==> total vigor = 113875
+306477 supported entities
+Tree (13): Total light at base = 8877.88 ==> total vigor = 133168
+357512 supported entities
+Tree (14): Total light at base = 7950.92 ==> total vigor = 119264
+315070 supported entities
+Tree (15): Total light at base = 8158.07 ==> total vigor = 122371
+334027 supported entities
+Tree (16): Total light at base = 5547.51 ==> total vigor = 83212.7
+230147 supported entities
+Tree (17): Total light at base = 7957.2 ==> total vigor = 119358
+338660 supported entities
+Tree (18): Total light at base = 6988.12 ==> total vigor = 104822
+292951 supported entities
+Tree (19): Total light at base = 8829.36 ==> total vigor = 132440
+352415 supported entities
+Tree (20): Total light at base = 8676 ==> total vigor = 130140
+355508 supported entities
+Tree (21): Total light at base = 7382.67 ==> total vigor = 110740
+303694 supported entities
+Tree (22): Total light at base = 7114.59 ==> total vigor = 106719
+293530 supported entities
+Tree (23): Total light at base = 7603.65 ==> total vigor = 114055
+323987 supported entities
+Tree (24): Total light at base = 8958.07 ==> total vigor = 134371
+349453 supported entities
+
+Total Pruned 119428
+Max height of plant after 20 flushes is 814.6 cm
+Height:Width 0.9
+Max Width of Canopy (cm) 920.4
+Ratio of X:Z widths 0.649 (597.077148 920.360962) 
+Final Lambda 0.30
+
+Nodes 77378 Branches 7962 N:B 9.7
+Total production of Nodes 195799
+Width of base of main stem is 27.09
+
+**************
+End of simulation (79 steps)
+
+It took 22.9833 minutes
+
+
+ Random Number Seed: 1369568156
+
+
+ Highest nodenum 5071948
+<command-line>: error: missing '(' after predicate
+<command-line>: error: missing '(' after predicate
+g++ -c -fPIC -O3 lsys.ii
+g++ -shared -fPIC -Xlinker -Bsymbolic -o lsys.so lsys.o
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+Steps: 79
+READ (1)
+Creating Orchard Layout
+0 -800.00  0 -1400.00
+1 -400.00  0 -1400.00
+2 0.00  0 -1400.00
+3 400.00  0 -1400.00
+4 800.00  0 -1400.00
+5 -800.00  0 -700.00
+6 -400.00  0 -700.00
+7 0.00  0 -700.00
+8 400.00  0 -700.00
+9 800.00  0 -700.00
+10 -800.00  0 0.00
+11 -400.00  0 0.00
+12 0.00  0 0.00
+13 400.00  0 0.00
+14 800.00  0 0.00
+15 -800.00  0 700.00
+16 -400.00  0 700.00
+17 0.00  0 700.00
+18 400.00  0 700.00
+19 800.00  0 700.00
+20 -800.00  0 1400.00
+21 -400.00  0 1400.00
+22 0.00  0 1400.00
+23 400.00  0 1400.00
+24 800.00  0 1400.00
+Start READ phase part 2
+READ (2)
+Running TreeReader for plant 0
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 0
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 0
+********************
+Running TreeReader for plant 1
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 1
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 1
+********************
+Running TreeReader for plant 2
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 2
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 2
+********************
+Running TreeReader for plant 3
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 3
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 3
+********************
+Running TreeReader for plant 4
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 4
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - ex
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+it MTG reading loop
+
+Finsihed Processing plant 4
+********************
+Running TreeReader for plant 5
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 5
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 5
+********************
+Running TreeReader for plant 6
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 6
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 6
+********************
+Running TreeReader for plant 7
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 7
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 7
+********************
+Running TreeReader for plant 8
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 8
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 8
+********************
+Running TreeReader for plant 9
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 9
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 9
+********************
+Running TreeReader for plant 10
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBr
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+anches, on with the show for tree 10
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 10
+********************
+Running TreeReader for plant 11
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 11
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 11
+********************
+Running TreeReader for plant 12
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 12
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 12
+********************
+Running TreeReader for plant 13
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 13
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 13
+********************
+Running TreeReader for plant 14
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 14
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 14
+********************
+Running TreeReader for plant 15
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 15
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 15
+********************
+Running TreeReader for plant 16
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Proc
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+essing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 16
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 16
+********************
+Running TreeReader for plant 17
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 17
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 17
+********************
+Running TreeReader for plant 18
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 18
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 18
+********************
+Running TreeReader for plant 19
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 19
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 19
+********************
+Running TreeReader for plant 20
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 20
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 20
+********************
+Running TreeReader for plant 21
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 21
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+
+Loading File /home/neil/Dropbox/MTGs/842/Plant06.mtg (1434 lines)
+
+
+Parsing completed Ok
+Adjusting MTG size ... Ok
+21
+********************
+Running TreeReader for plant 22
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 22
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 22
+********************
+Running TreeReader for plant 23
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 23
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 23
+********************
+Running TreeReader for plant 24
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg in mapBranches
+Loading AML...OK
+
+MTG loaded ...
+Created nbranches and branchXYZ and some of lastNodes on lab table
+
+Processing parents and rest of lastNodes for each of 1007 nodes
+**********Finished processing**********
+Found start of data
+Test we have all the data
+Found all the bits we want
+1 2 3 7 8 9 10 11 
+Finished with ret = 0
+
+back from mapBranches, on with the show for tree 24
+loop until ENTITY-CODE line is found, top of actual data 
+all good with /home/neil/Dropbox/MTGs/842/Plant06.mtg
+OK, next line will have plant structure
+Short Line is size 0 - exit MTG reading loop
+
+Finsihed Processing plant 24
+********************
+READ phase completed
+
+Adjusting Widths (3)
+Width Adjust complete
+Width at base is 2.778 cm
+
+INTERPRET_POSITIONS (4)
+SET_POSITIONS (5)
+Current height of plant after 8 flushes is 223.2 cm
+Pruned 0 entities
+End of Growing Flush 8 (year 4) (step 5)
+**************
+
+BHACCUMULATE (6)
+BHDISTRIBUTE (7)
+Tree (0): Total light at base = 104.371 ==> total vigor = 1565.56
+4138 supported entities
+Tree (1): Total light at base = 80.9509 ==> total vigor = 1214.26
+4130 supported entities
+Tree (2): Total light at base = 81.7592 ==> total vigor = 1226.39
+4130 supported entities
+Tree (3): Total light at base = 83.0626 ==> total vigor = 1245.94
+4130 supported entities
+Tree (4): Total light at base = 82.7907 ==> total vigor = 1241.86
+4130 supported entities
+Tree (5): Total light at base = 100.147 ==> total vigor = 1502.21
+4130 supported entities
+Tree (6): Total light at base = 93.98 ==> total vigor = 1409.7
+4130 supported entities
+Tree (7): Total light at base = 90.9783 ==> total vigor = 1364.68
+4130 supported entities
+Tree (8): Total light at base = 100.441 ==> total vigor = 1506.62
+4130 supported entities
+Tree (9): Total light at base = 94.7112 ==> total vigor = 1420.67
+4130 supported entities
+Tree (10): Total light at base = 86.8324 ==> total vigor = 1302.49
+4130 supported entities
+Tree (11): Total light at base = 84.1725 ==> total vigor = 1262.59
+4130 supported entities
+Tree (12): Total light at base = 80.3156 ==> total vigor = 1204.73
+4130 supported entities
+Tree (13): Total light at base = 78.7874 ==> total vigor = 1181.81
+4130 supported entities
+Tree (14): Total light at base = 91.8833 ==> total vigor = 1378.25
+4130 supported entities
+Tree (15): Total light at base = 88.1916 ==> total vigor = 1322.87
+4130 supported entities
+Tree (16): Total light at base = 76.9807 ==> total vigor = 1154.71
+4130 supported entities
+Tree (17): Total light at base = 91.1768 ==> total vigor = 1367.65
+4130 supported entities
+Tree (18): Total light at base = 83.6752 ==> total vigor = 1255.13
+4130 supported entities
+Tree (19): Total light at base = 91.2807 ==> total vigor = 1369.21
+4130 supported entities
+Tree (20): Total light at base = 89.6996 ==> total vigor = 1345.49
+4130 supported entities
+Tree (21): Total light at base = 87.4979 ==> total vigor = 1312.47
+4130 supported entities
+Tree (22): Total light at base = 83.9018 ==> total vigor = 1258.53
+4130 supported entities
+Tree (23): Total light at base = 89.2212 ==> total vigor = 1338.32
+4130 supported entities
+Tree (24): Total light at base = 94.8775 ==> total vigor = 1423.16
+4130 supported entities
+PRUNE (8)
+Produced 7931 PruneCaps
+GROW (9)
+Lambda now 0.50 (step 9, age 4)
+
+Nodes 1563 Branches 288 N:B 5.4
+INTERPRET_POSITIONS (10)
+SET_POSITIONS (11)
+Current height of plant after 9 flushes is 262.4 cm
+Pruned 440 entities
+End of Growing Flush 9 (year 4) (step 11)
+**************
+
+BHACCUMULATE (12)
+BHDISTRIBUTE (13)
+Tree (0): Total light at base = 216.767 ==> total vigor = 3251.5
+5236 supported entities
+Tree (1): Total light at base = 204.759 ==> total vigor = 3071.38
+3983 supported entities
+Tree (2): Total light at base = 212.392 ==> total vigor = 3185.88
+4106 supported entities
+Tree (3): Total light at base = 184.327 ==> total vigor = 2764.9
+4407 supported entities
+Tree (4): Total light at base = 222.658 ==> total vigor = 3339.87
+4897 supported entities
+Tree (5): Total light at base = 198.013 ==> total vigor = 2970.2
+5042 supported entities
+Tree (6): Total light at base = 215.277 ==> total vigor = 3229.15
+5080 supported entities
+Tree (7): Total light at base = 251.378 ==> total vigor = 3770.67
+4972 supported entities
+Tree (8): Total light at base = 229.561 ==> total vigor = 3443.42
+5239 supported entities
+Tree (9): Total light at base = 209.484 ==> total vigor = 3142.25
+4758 supported entities
+Tree (10): Total light at base = 225.309 ==> total vigor = 3379.63
+4620 supported entities
+Tree (11): Total light at base = 198.129 ==> total vigor = 2971.94
+4153 supported entities
+Tree (12): Total light at base = 201.929 ==> total vigor = 3028.94
+4490 supported entities
+Tree (13): Total light at base = 197.642 ==> total vigor = 2964.63
+4278 supported entities
+Tree (14): Total light at base = 229.274 ==> total vigor = 3439.11
+4791 supported entities
+Tree (15): Total light at base = 205.904 ==> total vigor = 3088.56
+4883 supported entities
+Tree (16): Total light at base = 154.098 ==> total vigor = 2311.47
+4055 supported entities
+Tree (17): Total light at base = 193.893 ==> total vigor = 2908.4
+4792 supported entities
+Tree (18): Total light at base = 211.638 ==> total vigor = 3174.56
+4599 supported entities
+Tree (19): Total light at base = 216.444 ==> total vigor = 3246.67
+4640 supported entities
+Tree (20): Total light at base = 210.799 ==> total vigor = 3161.98
+4733 supported entities
+Tree (21): Total light at base = 230.188 ==> total vigor = 3452.82
+4632 supported entities
+Tree (22): Total light at base = 190.136 ==> total vigor = 2852.04
+4750 supported entities
+Tree (23): Total light at base = 193.017 ==> total vigor = 2895.26
+4823 supported entities
+Tree (24): Total light at base = 228.029 ==> total vigor = 3420.44
+5270 supported entities
+PRUNE (14)
+Produced 4594 PruneCaps
+GROW (15)
+Lambda now 0.50 (step 15, age 5)
+
+Nodes 2667 Branches 315 N:B 8.5
+INTERPRET_POSITIONS (16)
+SET_POSITIONS (17)
+Current height of plant after 10 flushes is 308.7 cm
+Pruned 294 entities
+End of Growing Flush 10 (year 5) (step 17)
+**************
+
+BHACCUMULATE (18)
+BHDISTRIBUTE (19)
+Tree (0): Total light at base = 312.23 ==> total vigor = 4683.45
+9928 supported entities
+Tree (1): Total light at base = 365.301 ==> total vigor = 5479.52
+9624 supported entities
+Tree (2): Total light at base = 387.7 ==> total vigor = 5815.5
+9049 supported entities
+Tree (3): Total light at base = 321.767 ==> total vigor = 4826.5
+9136 supported entities
+Tree (4): Total light at base = 412.542 ==> total vigor = 6188.13
+10333 supported entities
+Tree (5): Total light at base = 373.821 ==> total vigor = 5607.31
+9619 supported entities
+Tree (6): Total light at base = 384.371 ==> total vigor = 5765.56
+9818 supported entities
+Tree (7): Total light at base = 405.399 ==> total vigor = 6080.99
+11493 supported entities
+Tree (8): Total light at base = 368.996 ==> total vigor = 5534.94
+10702 supported entities
+Tree (9): Total light at base = 359.179 ==> total vigor = 5387.68
+9665 supported entities
+Tree (10): Total light at base = 448.51 ==> total vigor = 6727.65
+10257 supported entities
+Tree (11): Total light at base = 387.037 ==> total vigor = 5805.56
+9063 supported entities
+Tree (12): Total light at base = 385.689 ==> total vigor = 5785.34
+9438 supported entities
+Tree (13): Total light at base = 337.656 ==> total vigor = 5064.84
+9558 supported entities
+Tree (14): Total light at base = 415.369 ==> total vigor = 6230.54
+11127 supported entities
+Tree (15): Total light at base = 342.084 ==> total vigor = 5131.27
+10336 supported entities
+Tree (16): Total light at base = 301.396 ==> total vigor = 4520.94
+7814 supported entities
+Tree (17): Total light at base = 299.731 ==> total vigor = 4495.96
+9402 supported entities
+Tree (18): Total light at base = 366.468 ==> total vigor = 5497.01
+9675 supported entities
+Tree (19): Total light at base = 372.255 ==> total vigor = 5583.83
+10029 supported entities
+Tree (20): Total light at base = 371.931 ==> total vigor = 5578.96
+9884 supported entities
+Tree (21): Total light at base = 372.73 ==> total vigor = 5590.95
+10304 supported entities
+Tree (22): Total light at base = 333.705 ==> total vigor = 5005.58
+8965 supported entities
+Tree (23): Total light at base = 430.716 ==> total vigor = 6460.75
+9742 supported entities
+Tree (24): Total light at base = 396.051 ==> total vigor = 5940.77
+10904 supported entities
+PRUNE (20)
+Produced 13253 PruneCaps
+GROW (21)
+Lambda now 0.50 (step 21, age 5)
+
+Nodes 5072 Branches 493 N:B 10.3
+INTERPRET_POSITIONS (22)
+SET_POSITIONS (23)
+Current height of plant after 11 flushes is 357.6 cm
+Pruned 599 entities
+End of Growing Flush 11 (year 5) (step 23)
+**************
+
+BHACCUMULATE (24)
+BHDISTRIBUTE (25)
+Tree (0): Total light at base = 558.372 ==> total vigor = 8375.57
+16246 supported entities
+Tree (1): Total light at base = 637.438 ==> total vigor = 9561.58
+18031 supported entities
+Tree (2): Total light at base = 660.591 ==> total vigor = 9908.86
+18353 supported entities
+Tree (3): Total light at base = 550.152 ==> total vigor = 8252.28
+16863 supported entities
+Tree (4): Total light at base = 612.556 ==> total vigor = 9188.33
+19947 supported entities
+Tree (5): Total light at base = 611.263 ==> total vigor = 9168.95
+17596 supported entities
+Tree (6): Total light at base = 682.84 ==> total vigor = 10242.6
+18094 supported entities
+Tree (7): Total light at base = 689.591 ==> total vigor = 10343.9
+20226 supported entities
+Tree (8): Total light at base = 661.735 ==> total vigor = 9926.02
+18546 supported entities
+Tree (9): Total light at base = 653.214 ==> total vigor = 9798.21
+17738 supported entities
+Tree (10): Total light at base = 806.699 ==> total vigor = 12100.5
+20168 supported entities
+Tree (11): Total light at base = 692.817 ==> total vigor = 10392.3
+17926 supported entities
+Tree (12): Total light at base = 634.731 ==> total vigor = 9520.96
+17787 supported entities
+Tree (13): Total light at base = 588.481 ==> total vigor = 8827.21
+16452 supported entities
+Tree (14): Total light at base = 688.508 ==> total vigor = 10327.6
+19450 supported entities
+Tree (15): Total light at base = 607.792 ==> total vigor = 9116.88
+17267 supported entities
+Tree (16): Total light at base = 529.628 ==> total vigor = 7944.43
+14669 supported entities
+Tree (17): Total light at base = 558.49 ==> total vigor = 8377.36
+15458 supported entities
+Tree (18): Total light at base = 592.315 ==> total vigor = 8884.72
+17031 supported entities
+Tree (19): Total light at base = 594.162 ==> total vigor = 8912.43
+17643 supported entities
+Tree (20): Total light at base = 655.639 ==> total vigor = 9834.59
+18631 supported entities
+Tree (21): Total light at base = 606.773 ==> total vigor = 9101.59
+18294 supported entities
+Tree (22): Total light at base = 631.802 ==> total vigor = 9477.04
+16557 supported entities
+Tree (23): Total light at base = 678.072 ==> total vigor = 10171.1
+19822 supported entities
+Tree (24): Total light at base = 675.08 ==> total vigor = 10126.2
+19251 supported entities
+PRUNE (26)
+Produced 20790 PruneCaps
+GROW (27)
+Lambda now 0.50 (step 27, age 6)
+
+Nodes 8900 Branches 818 N:B 10.9
+INTERPRET_POSITIONS (28)
+SET_POSITIONS (29)
+Current height of plant after 12 flushes is 407.3 cm
+Pruned 1303 entities
+End of Growing Flush 12 (year 6) (step 29)
+**************
+
+BHACCUMULATE (30)
+BHDISTRIBUTE (31)
+Tree (0): Total light at base = 877.015 ==> total vigor = 13155.2
+29229 supported entities
+Tree (1): Total light at base = 1087.35 ==> total vigor = 16310.2
+31505 supported entities
+Tree (2): Total light at base = 976.069 ==> total vigor = 14641
+32345 supported entities
+Tree (3): Total light at base = 971.76 ==> total vigor = 14576.4
+28392 supported entities
+Tree (4): Total light at base = 993.399 ==> total vigor = 14901
+30814 supported entities
+Tree (5): Total light at base = 953.532 ==> total vigor = 14303
+31357 supported entities
+Tree (6): Total light at base = 1092.49 ==> total vigor = 16387.4
+33865 supported entities
+Tree (7): Total light at base = 1159.11 ==> total vigor = 17386.7
+33625 supported entities
+Tree (8): Total light at base = 1045.17 ==> total vigor = 15677.6
+33347 supported entities
+Tree (9): Total light at base = 993.142 ==> total vigor = 14897.1
+32922 supported entities
+Tree (10): Total light at base = 1281.97 ==> total vigor = 19229.6
+39017 supported entities
+Tree (11): Total light at base = 951.08 ==> total vigor = 14266.2
+33514 supported entities
+Tree (12): Total light at base = 1064.07 ==> total vigor = 15961
+30236 supported entities
+Tree (13): Total light at base = 1035.55 ==> total vigor = 15533.2
+29168 supported entities
+Tree (14): Total light at base = 1013.58 ==> total vigor = 15203.7
+33967 supported entities
+Tree (15): Total light at base = 951.451 ==> total vigor = 14271.8
+31723 supported entities
+Tree (16): Total light at base = 846.86 ==> total vigor = 12702.9
+27126 supported entities
+Tree (17): Total light at base = 951.027 ==> total vigor = 14265.4
+28241 supported entities
+Tree (18): Total light at base = 918.036 ==> total vigor = 13770.5
+30457 supported entities
+Tree (19): Total light at base = 986.39 ==> total vigor = 14795.8
+28990 supported entities
+Tree (20): Total light at base = 1029.96 ==> total vigor = 15449.5
+34223 supported entities
+Tree (21): Total light at base = 944.827 ==> total vigor = 14172.4
+31952 supported entities
+Tree (22): Total light at base = 979.159 ==> total vigor = 14687.4
+31790 supported entities
+Tree (23): Total light at base = 979.392 ==> total vigor = 14690.9
+33721 supported entities
+Tree (24): Total light at base = 1005.2 ==> total vigor = 15078
+34104 supported entities
+PRUNE (32)
+Produced 43477 PruneCaps
+GROW (33)
+Lambda now 0.50 (step 33, age 6)
+
+Nodes 15136 Branches 1374 N:B 11.0
+INTERPRET_POSITIONS (34)
+SET_POSITIONS (35)
+Current height of plant after 13 flushes is 457.9 cm
+Pruned 2395 entities
+End of Growing Flush 13 (year 6) (step 35)
+**************
+
+BHACCUMULATE (36)
+BHDISTRIBUTE (37)
+Tree (0): Total light at base = 1265.33 ==> total vigor = 18980
+45770 supported entities
+Tree (1): Total light at base = 1647.83 ==> total vigor = 24717.5
+53198 supported entities
+Tree (2): Total light at base = 1491.05 ==> total vigor = 22365.7
+49122 supported entities
+Tree (3): Total light at base = 1498.82 ==> total vigor = 22482.3
+49484 supported entities
+Tree (4): Total light at base = 1447.77 ==> total vigor = 21716.6
+51553 supported entities
+Tree (5): Total light at base = 1456.96 ==> total vigor = 21854.4
+50373 supported entities
+Tree (6): Total light at base = 1749.49 ==> total vigor = 26242.3
+54855 supported entities
+Tree (7): Total light at base = 1658.92 ==> total vigor = 24883.8
+57290 supported entities
+Tree (8): Total light at base = 1565.64 ==> total vigor = 23484.6
+53095 supported entities
+Tree (9): Total light at base = 1427.8 ==> total vigor = 21417.1
+50195 supported entities
+Tree (10): Total light at base = 1864.54 ==> total vigor = 27968.1
+65806 supported entities
+Tree (11): Total light at base = 1432.94 ==> total vigor = 21494.2
+47514 supported entities
+Tree (12): Total light at base = 1615.67 ==> total vigor = 24235.1
+50700 supported entities
+Tree (13): Total light at base = 1541.45 ==> total vigor = 23121.7
+49368 supported entities
+Tree (14): Total light at base = 1511.49 ==> total vigor = 22672.3
+52825 supported entities
+Tree (15): Total light at base = 1477.96 ==> total vigor = 22169.4
+49983 supported entities
+Tree (16): Total light at base = 1245 ==> total vigor = 18675
+44246 supported entities
+Tree (17): Total light at base = 1365.73 ==> total vigor = 20486
+49168 supported entities
+Tree (18): Total light at base = 1315.2 ==> total vigor = 19728
+49233 supported entities
+Tree (19): Total light at base = 1514.32 ==> total vigor = 22714.8
+46751 supported entities
+Tree (20): Total light at base = 1436.31 ==> total vigor = 21544.6
+52631 supported entities
+Tree (21): Total light at base = 1312.65 ==> total vigor = 19689.8
+48990 supported entities
+Tree (22): Total light at base = 1524.89 ==> total vigor = 22873.3
+51617 supported entities
+Tree (23): Total light at base = 1450.85 ==> total vigor = 21762.8
+51998 supported entities
+Tree (24): Total light at base = 1478.3 ==> total vigor = 22174.5
+53270 supported entities
+PRUNE (38)
+Produced 75341 PruneCaps
+GROW (39)
+Lambda now 0.50 (step 39, age 7)
+
+Nodes 24044 Branches 2238 N:B 10.7
+INTERPRET_POSITIONS (40)
+SET_POSITIONS (41)
+Current height of plant after 14 flushes is 506.3 cm
+Pruned 4098 entities
+End of Growing Flush 14 (year 7) (step 41)
+**************
+
+BHACCUMULATE (42)
+BHDISTRIBUTE (43)
+Tree (0): Total light at base = 1708.03 ==> total vigor = 25620.5
+67032 supported entities
+Tree (1): Total light at base = 2423.84 ==> total vigor = 36357.6
+82025 supported entities
+Tree (2): Total light at base = 2099.25 ==> total vigor = 31488.7
+75250 supported entities
+Tree (3): Total light at base = 2266.84 ==> total vigor = 34002.6
+75542 supported entities
+Tree (4): Total light at base = 2095.02 ==> total vigor = 31425.3
+72816 supported entities
+Tree (5): Total light at base = 2038.14 ==> total vigor = 30572.1
+75583 supported entities
+Tree (6): Total light at base = 2524.59 ==> total vigor = 37868.8
+86671 supported entities
+Tree (7): Total light at base = 2246.16 ==> total vigor = 33692.4
+82015 supported entities
+Tree (8): Total light at base = 2162.53 ==> total vigor = 32438
+79428 supported entities
+Tree (9): Total light at base = 1963.07 ==> total vigor = 29446
+74932 supported entities
+Tree (10): Total light at base = 2637.11 ==> total vigor = 39556.7
+95981 supported entities
+Tree (11): Total light at base = 2027.16 ==> total vigor = 30407.3
+73044 supported entities
+Tree (12): Total light at base = 2093.81 ==> total vigor = 31407.1
+79316 supported entities
+Tree (13): Total light at base = 2113.24 ==> total vigor = 31698.6
+78851 supported entities
+Tree (14): Total light at base = 1928.69 ==> total vigor = 28930.3
+77350 supported entities
+Tree (15): Total light at base = 1938.03 ==> total vigor = 29070.5
+74874 supported entities
+Tree (16): Total light at base = 1685.07 ==> total vigor = 25276
+66719 supported entities
+Tree (17): Total light at base = 1922.91 ==> total vigor = 28843.6
+71747 supported entities
+Tree (18): Total light at base = 1972.28 ==> total vigor = 29584.2
+67490 supported entities
+Tree (19): Total light at base = 2128.89 ==> total vigor = 31933.4
+75326 supported entities
+Tree (20): Total light at base = 1850.48 ==> total vigor = 27757.2
+75650 supported entities
+Tree (21): Total light at base = 1787.2 ==> total vigor = 26808
+68045 supported entities
+Tree (22): Total light at base = 2011.51 ==> total vigor = 30172.7
+79129 supported entities
+Tree (23): Total light at base = 1957.97 ==> total vigor = 29369.6
+76482 supported entities
+Tree (24): Total light at base = 2033.17 ==> total vigor = 30497.5
+78634 supported entities
+PRUNE (44)
+Produced 119612 PruneCaps
+GROW (45)
+Lambda now 0.50 (step 45, age 7)
+
+Nodes 33934 Branches 3292 N:B 10.3
+INTERPRET_POSITIONS (46)
+SET_POSITIONS (47)
+Current height of plant after 15 flushes is 559.4 cm
+Pruned 7294 entities
+End of Growing Flush 15 (year 7) (step 47)
+**************
+
+BHACCUMULATE (48)
+BHDISTRIBUTE (49)
+Tree (0): Total light at base = 2359.3 ==> total vigor = 35389.5
+89574 supported entities
+Tree (1): Total light at base = 3195.62 ==> total vigor = 47934.3
+119008 supported entities
+Tree (2): Total light at base = 2814.71 ==> total vigor = 42220.7
+102965 supported entities
+Tree (3): Total light at base = 2875.7 ==> total vigor = 43135.5
+107543 supported entities
+Tree (4): Total light at base = 2724.38 ==> total vigor = 40865.8
+102173 supported entities
+Tree (5): Total light at base = 2644.43 ==> total vigor = 39666.5
+105011 supported entities
+Tree (6): Total light at base = 3129.65 ==> total vigor = 46944.7
+121229 supported entities
+Tree (7): Total light at base = 3061.77 ==> total vigor = 45926.5
+111767 supported entities
+Tree (8): Total light at base = 2866.3 ==> total vigor = 42994.5
+107255 supported entities
+Tree (9): Total light at base = 2575.73 ==> total vigor = 38635.9
+100238 supported entities
+Tree (10): Total light at base = 3382.89 ==> total vigor = 50743.4
+131176 supported entities
+Tree (11): Total light at base = 2607.32 ==> total vigor = 39109.8
+103031 supported entities
+Tree (12): Total light at base = 2631.84 ==> total vigor = 39477.6
+105788 supported entities
+Tree (13): Total light at base = 2797.44 ==> total vigor = 41961.6
+104860 supported entities
+Tree (14): Total light at base = 2544.27 ==> total vigor = 38164.1
+94982 supported entities
+Tree (15): Total light at base = 2654.28 ==> total vigor = 39814.2
+99806 supported entities
+Tree (16): Total light at base = 2132.43 ==> total vigor = 31986.5
+88441 supported entities
+Tree (17): Total light at base = 2532.52 ==> total vigor = 37987.9
+98382 supported entities
+Tree (18): Total light at base = 2594.77 ==> total vigor = 38921.5
+99298 supported entities
+Tree (19): Total light at base = 2650.08 ==> total vigor = 39751.2
+102335 supported entities
+Tree (20): Total light at base = 2567.78 ==> total vigor = 38516.7
+96700 supported entities
+Tree (21): Total light at base = 2351.1 ==> total vigor = 35266.5
+89097 supported entities
+Tree (22): Total light at base = 2688.41 ==> total vigor = 40326.2
+105562 supported entities
+Tree (23): Total light at base = 2560.19 ==> total vigor = 38402.8
+100926 supported entities
+Tree (24): Total light at base = 2752.1 ==> total vigor = 41281.5
+103103 supported entities
+PRUNE (50)
+Produced 163124 PruneCaps
+GROW (51)
+Lambda now 0.50 (step 51, age 8)
+
+Nodes 42947 Branches 4384 N:B 9.8
+INTERPRET_POSITIONS (52)
+SET_POSITIONS (53)
+Current height of plant after 16 flushes is 609.6 cm
+Pruned 9890 entities
+End of Growing Flush 16 (year 8) (step 53)
+**************
+
+BHACCUMULATE (54)
+BHDISTRIBUTE (55)
+Tree (0): Total light at base = 3006.78 ==> total vigor = 45101.7
+115759 supported entities
+Tree (1): Total light at base = 3838.96 ==> total vigor = 57584.4
+155762 supported entities
+Tree (2): Total light at base = 3422.23 ==> total vigor = 51333.5
+136377 supported entities
+Tree (3): Total light at base = 3758.56 ==> total vigor = 56378.4
+140343 supported entities
+Tree (4): Total light at base = 3383.93 ==> total vigor = 50759
+130798 supported entities
+Tree (5): Total light at base = 3344.18 ==> total vigor = 50162.6
+131088 supported entities
+Tree (6): Total light at base = 4225.73 ==> total vigor = 63385.9
+149263 supported entities
+Tree (7): Total light at base = 3714.63 ==> total vigor = 55719.4
+147667 supported entities
+Tree (8): Total light at base = 3453.13 ==> total vigor = 51797
+141490 supported entities
+Tree (9): Total light at base = 3344.12 ==> total vigor = 50161.9
+127490 supported entities
+Tree (10): Total light at base = 4056.08 ==> total vigor = 60841.2
+163333 supported entities
+Tree (11): Total light at base = 3130.78 ==> total vigor = 46961.7
+131250 supported entities
+Tree (12): Total light at base = 3207.03 ==> total vigor = 48105.5
+131067 supported entities
+Tree (13): Total light at base = 3480.56 ==> total vigor = 52208.3
+138590 supported entities
+Tree (14): Total light at base = 3210.59 ==> total vigor = 48158.9
+125503 supported entities
+Tree (15): Total light at base = 3323.96 ==> total vigor = 49859.3
+131650 supported entities
+Tree (16): Total light at base = 2601.66 ==> total vigor = 39024.8
+112201 supported entities
+Tree (17): Total light at base = 3050.64 ==> total vigor = 45759.6
+124385 supported entities
+Tree (18): Total light at base = 3117.81 ==> total vigor = 46767.2
+129223 supported entities
+Tree (19): Total light at base = 3369.72 ==> total vigor = 50545.8
+123527 supported entities
+Tree (20): Total light at base = 3279.21 ==> total vigor = 49188.2
+121773 supported entities
+Tree (21): Total light at base = 2879.45 ==> total vigor = 43191.8
+113567 supported entities
+Tree (22): Total light at base = 3138.45 ==> total vigor = 47076.7
+131414 supported entities
+Tree (23): Total light at base = 3130.58 ==> total vigor = 46958.8
+128943 supported entities
+Tree (24): Total light at base = 3511.97 ==> total vigor = 52679.6
+132315 supported entities
+PRUNE (56)
+Produced 212483 PruneCaps
+GROW (57)
+Lambda now 0.50 (step 57, age 8)
+
+Nodes 51046 Branches 5606 N:B 9.1
+INTERPRET_POSITIONS (58)
+SET_POSITIONS (59)
+Current height of plant after 17 flushes is 656.1 cm
+Pruned 12901 entities
+End of Growing Flush 17 (year 8) (step 59)
+**************
+
+BHACCUMULATE (60)
+BHDISTRIBUTE (61)
+Tree (0): Total light at base = 3422.73 ==> total vigor = 51341
+139502 supported entities
+Tree (1): Total light at base = 4531.36 ==> total vigor = 67970.4
+182112 supported entities
+Tree (2): Total light at base = 4122.03 ==> total vigor = 61830.5
+156144 supported entities
+Tree (3): Total light at base = 4603.42 ==> total vigor = 69051.2
+173973 supported entities
+Tree (4): Total light at base = 4140.17 ==> total vigor = 62102.6
+157630 supported entities
+Tree (5): Total light at base = 4056.57 ==> total vigor = 60848.6
+156068 supported entities
+Tree (6): Total light at base = 4879.31 ==> total vigor = 73189.7
+183263 supported entities
+Tree (7): Total light at base = 4513.78 ==> total vigor = 67706.8
+173736 supported entities
+Tree (8): Total light at base = 4002.11 ==> total vigor = 60031.7
+158452 supported entities
+Tree (9): Total light at base = 3932.61 ==> total vigor = 58989.2
+162329 supported entities
+Tree (10): Total light at base = 4990.97 ==> total vigor = 74864.6
+195299 supported entities
+Tree (11): Total light at base = 3775.78 ==> total vigor = 56636.7
+150240 supported entities
+Tree (12): Total light at base = 3853.1 ==> total vigor = 57796.5
+151061 supported entities
+Tree (13): Total light at base = 4216.54 ==> total vigor = 63248.2
+166749 supported entities
+Tree (14): Total light at base = 3817.83 ==> total vigor = 57267.4
+151038 supported entities
+Tree (15): Total light at base = 4064.08 ==> total vigor = 60961.2
+154357 supported entities
+Tree (16): Total light at base = 3113.67 ==> total vigor = 46705.1
+130973 supported entities
+Tree (17): Total light at base = 3601.04 ==> total vigor = 54015.6
+145734 supported entities
+Tree (18): Total light at base = 3796 ==> total vigor = 56940
+150247 supported entities
+Tree (19): Total light at base = 3919.01 ==> total vigor = 58785.1
+153507 supported entities
+Tree (20): Total light at base = 4102.12 ==> total vigor = 61531.9
+157506 supported entities
+Tree (21): Total light at base = 3484.13 ==> total vigor = 52261.9
+137087 supported entities
+Tree (22): Total light at base = 3651 ==> total vigor = 54765
+151695 supported entities
+Tree (23): Total light at base = 3738.58 ==> total vigor = 56078.6
+151727 supported entities
+Tree (24): Total light at base = 4092.42 ==> total vigor = 61386.3
+166870 supported entities
+PRUNE (62)
+Produced 240949 PruneCaps
+GROW (63)
+Lambda now 0.40 (step 63, age 9)
+
+Nodes 58422 Branches 7057 N:B 8.3
+INTERPRET_POSITIONS (64)
+SET_POSITIONS (65)
+Current height of plant after 18 flushes is 714.9 cm
+Pruned 13181 entities
+End of Growing Flush 18 (year 9) (step 65)
+**************
+
+BHACCUMULATE (66)
+BHDISTRIBUTE (67)
+Tree (0): Total light at base = 4019.29 ==> total vigor = 60289.4
+159949 supported entities
+Tree (1): Total light at base = 5465.77 ==> total vigor = 81986.5
+206564 supported entities
+Tree (2): Total light at base = 4526.68 ==> total vigor = 67900.2
+189169 supported entities
+Tree (3): Total light at base = 5108.76 ==> total vigor = 76631.4
+206483 supported entities
+Tree (4): Total light at base = 4911.54 ==> total vigor = 73673.1
+188946 supported entities
+Tree (5): Total light at base = 4404.77 ==> total vigor = 66071.6
+178728 supported entities
+Tree (6): Total light at base = 5516.42 ==> total vigor = 82746.3
+216087 supported entities
+Tree (7): Total light at base = 5586.15 ==> total vigor = 83792.2
+203240 supported entities
+Tree (8): Total light at base = 4658.85 ==> total vigor = 69882.7
+184751 supported entities
+Tree (9): Total light at base = 4659.75 ==> total vigor = 69896.2
+180332 supported entities
+Tree (10): Total light at base = 6061.61 ==> total vigor = 90924.2
+225800 supported entities
+Tree (11): Total light at base = 4458.19 ==> total vigor = 66872.8
+176010 supported entities
+Tree (12): Total light at base = 4470.61 ==> total vigor = 67059.2
+178927 supported entities
+Tree (13): Total light at base = 4969.77 ==> total vigor = 74546.6
+197044 supported entities
+Tree (14): Total light at base = 4515.15 ==> total vigor = 67727.3
+177873 supported entities
+Tree (15): Total light at base = 4828.78 ==> total vigor = 72431.7
+190024 supported entities
+Tree (16): Total light at base = 3569.53 ==> total vigor = 53542.9
+153745 supported entities
+Tree (17): Total light at base = 4276.6 ==> total vigor = 64149
+171465 supported entities
+Tree (18): Total light at base = 4562.82 ==> total vigor = 68442.3
+175912 supported entities
+Tree (19): Total light at base = 4702.39 ==> total vigor = 70535.8
+179024 supported entities
+Tree (20): Total light at base = 4821.42 ==> total vigor = 72321.2
+185988 supported entities
+Tree (21): Total light at base = 4244.8 ==> total vigor = 63672
+161518 supported entities
+Tree (22): Total light at base = 4191.81 ==> total vigor = 62877.1
+175715 supported entities
+Tree (23): Total light at base = 4400.8 ==> total vigor = 66012.1
+177422 supported entities
+Tree (24): Total light at base = 4846.16 ==> total vigor = 72692.3
+195825 supported entities
+PRUNE (68)
+Produced 298068 PruneCaps
+GROW (69)
+Lambda now 0.40 (step 69, age 9)
+
+Nodes 61424 Branches 9046 N:B 6.8
+INTERPRET_POSITIONS (70)
+SET_POSITIONS (71)
+Current height of plant after 19 flushes is 761.1 cm
+Pruned 17864 entities
+End of Growing Flush 19 (year 9) (step 71)
+**************
+
+BHACCUMULATE (72)
+BHDISTRIBUTE (73)
+Tree (0): Total light at base = 4613.82 ==> total vigor = 69207.3
+154207 supported entities
+Tree (1): Total light at base = 6490.59 ==> total vigor = 97358.8
+206691 supported entities
+Tree (2): Total light at base = 5253.12 ==> total vigor = 78796.8
+168861 supported entities
+Tree (3): Total light at base = 5882.91 ==> total vigor = 88243.7
+189933 supported entities
+Tree (4): Total light at base = 6055.62 ==> total vigor = 90834.3
+184847 supported entities
+Tree (5): Total light at base = 5207.4 ==> total vigor = 78111
+170477 supported entities
+Tree (6): Total light at base = 6577.11 ==> total vigor = 98656.6
+197665 supported entities
+Tree (7): Total light at base = 6792.84 ==> total vigor = 101893
+211763 supported entities
+Tree (8): Total light at base = 5444.99 ==> total vigor = 81674.9
+179629 supported entities
+Tree (9): Total light at base = 5401.58 ==> total vigor = 81023.7
+183814 supported entities
+Tree (10): Total light at base = 7404.46 ==> total vigor = 111067
+227876 supported entities
+Tree (11): Total light at base = 5186.12 ==> total vigor = 77791.8
+176340 supported entities
+Tree (12): Total light at base = 5281.41 ==> total vigor = 79221.2
+171876 supported entities
+Tree (13): Total light at base = 6041.43 ==> total vigor = 90621.4
+194888 supported entities
+Tree (14): Total light at base = 5161.8 ==> total vigor = 77426.9
+167721 supported entities
+Tree (15): Total light at base = 5782.17 ==> total vigor = 86732.6
+192273 supported entities
+Tree (16): Total light at base = 3962.04 ==> total vigor = 59430.6
+136730 supported entities
+Tree (17): Total light at base = 4977.38 ==> total vigor = 74660.8
+160179 supported entities
+Tree (18): Total light at base = 5517.61 ==> total vigor = 82764.1
+172553 supported entities
+Tree (19): Total light at base = 5760.39 ==> total vigor = 86405.8
+176559 supported entities
+Tree (20): Total light at base = 5776.54 ==> total vigor = 86648.1
+180498 supported entities
+Tree (21): Total light at base = 4898.43 ==> total vigor = 73476.4
+161572 supported entities
+Tree (22): Total light at base = 4823.16 ==> total vigor = 72347.5
+159222 supported entities
+Tree (23): Total light at base = 5256.28 ==> total vigor = 78844.3
+170258 supported entities
+Tree (24): Total light at base = 5597.9 ==> total vigor = 83968.5
+179712 supported entities
+PRUNE (74)
+Produced 190549 PruneCaps
+GROW (75)
+Lambda now 0.30 (step 75, age 10)
+
+Nodes 55888 Branches 11057 N:B 5.1
+INTERPRET_POSITIONS (76)
+SET_POSITIONS (77)
+
+Opening XYZ file
+
+Opening MTG file
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+1.0  55
+Current height of plant after 20 flushes is 800.1 cm
+Pruned 10693 entities
+End of Growing Flush 20 (year 10) (step 77)
+**************
+
+Closed XYZ file
+
+Closed MTG ModelMTG.mtg file
+
+
+ Highest nodenum 3259253
+BHACCUMULATE (78)
+BHDISTRIBUTE (79)
+Tree (0): Total light at base = 5058.9 ==> total vigor = 75883.5
+160696 supported entities
+Tree (1): Total light at base = 7042.2 ==> total vigor = 105633
+212049 supported entities
+Tree (2): Total light at base = 5828.83 ==> total vigor = 87432.5
+180007 supported entities
+Tree (3): Total light at base = 6249.74 ==> total vigor = 93746.1
+203875 supported entities
+Tree (4): Total light at base = 6846.91 ==> total vigor = 102704
+207894 supported entities
+Tree (5): Total light at base = 5750.68 ==> total vigor = 86260.1
+174944 supported entities
+Tree (6): Total light at base = 7220.66 ==> total vigor = 108310
+217765 supported entities
+Tree (7): Total light at base = 7573.6 ==> total vigor = 113604
+224722 supported entities
+Tree (8): Total light at base = 6148.77 ==> total vigor = 92231.5
+191032 supported entities
+Tree (9): Total light at base = 5915.56 ==> total vigor = 88733.4
+194085 supported entities
+Tree (10): Total light at base = 8176.08 ==> total vigor = 122641
+254447 supported entities
+Tree (11): Total light at base = 5864.04 ==> total vigor = 87960.7
+186777 supported entities
+Tree (12): Total light at base = 5943.76 ==> total vigor = 89156.4
+177954 supported entities
+Tree (13): Total light at base = 6579.07 ==> total vigor = 98686
+198542 supported entities
+Tree (14): Total light at base = 5879.89 ==> total vigor = 88198.3
+175277 supported entities
+Tree (15): Total light at base = 6569.15 ==> total vigor = 98537.2
+198844 supported entities
+Tree (16): Total light at base = 4536 ==> total vigor = 68040
+147411 supported entities
+Tree (17): Total light at base = 5507.05 ==> total vigor = 82605.7
+170352 supported entities
+Tree (18): Total light at base = 6129.11 ==> total vigor = 91936.6
+187595 supported entities
+Tree (19): Total light at base = 6167.3 ==> total vigor = 92509.5
+193223 supported entities
+Tree (20): Total light at base = 6552.83 ==> total vigor = 98292.5
+197961 supported entities
+Tree (21): Total light at base = 5252.5 ==> total vigor = 78787.4
+170267 supported entities
+Tree (22): Total light at base = 5557.98 ==> total vigor = 83369.7
+174993 supported entities
+Tree (23): Total light at base = 5817.91 ==> total vigor = 87268.7
+185990 supported entities
+Tree (24): Total light at base = 6245.36 ==> total vigor = 93680.4
+191304 supported entities
+
+Total Pruned 80952
+Max height of plant after 20 flushes is 800.1 cm
+Height:Width 0.9
+Max Width of Canopy (cm) 854.8
+Ratio of X:Z widths 0.598 (510.901306 854.766418) 
+Final Lambda 0.30
+
+Nodes 45195 Branches 9736 N:B 4.6
+Total production of Nodes 125140
+Width of base of main stem is 21.34
+
+**************
+End of simulation (79 steps)
+
+It took 15.2500 minutes
+
+
+ Random Number Seed: 1369568156
+
+
+ Highest nodenum 3259253

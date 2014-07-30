@@ -1,0 +1,11 @@
+ignore:
+input.i
+lsys.exp
+lsys.i
+lsys.ii
+lsys.o
+lsys.lib
+lsys.obj
+test.cpp
+*
+lpfg  -wp 1050 20 -w 800 1000 lsystem.l view.v anim.a material.mat
