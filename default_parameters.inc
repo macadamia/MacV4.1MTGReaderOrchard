@@ -1,0 +1,23 @@
+#define NODELENGTH 	1.0f
+#define MAXGROW		19.9f
+#define PIPEEXP		2.6f
+#define	VIS 		0.0f
+#define REORIENT 	0.4f
+#define	TROPISM 	0.02f
+#define	LEAFINESS 	0.11f
+#define	NONLINEAR 	1.0f
+#define INITLAM 0.650000
+#define TARGLAM 0.510000
+#define	TRANSITION 	7.0f
+#define	DELAY 		7.0f
+#define	DROPTHRESH 	0.3f
+#define	SAMPLERAD 	1.6f
+#define	RAN 		0.05f
+#define	VERT 		0.00f
+#define	GROWTHRATE 	1.0f
+#define	BRANCHANGLE 	65.0f
+#define	spread 		1.0f
+#define	depth 		6
+#define	constA 		0.441f
+#define	constB 		6.31f
+

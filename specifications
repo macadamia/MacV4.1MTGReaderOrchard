@@ -1,0 +1,104 @@
+lsystem.l
+startup.hpp
+TreeReader.l
+anim.a
+view.v
+material.mat
+env.hpp
+hlu.hpp
+leaf.s
+leafA268.s
+leaf741.s
+leaf816.s
+leaf842.s
+MTGWriter.hpp
+mapBranches.hpp
+extra.hpp
+parameters.inc
+datastruc.inc
+quaternion.hpp
+branchNodeRatio.py
+combined.py
+NodeLength.py
+NBRatio.py
+pitch.py
+euclid.py
+description.txt
+ModelMTG.mtg
+ModelXYZ.csv
+ignore:
+*
+RunModelBatch:
+	lpfg -b lsystem.l view.v anim.a material.mat
+RunModelNoAnim:
+	lpfg -w 800 700 lsystem.l view.v anim.a material.mat
+RunModelWithAnim:
+	lpfg -a -w 800 700 lsystem.l view.v anim.a material.mat
+parameters:
+	EDIT parameters.inc
+ValidateOSX:
+	R --slave < /Users/neil/Dropbox/CodeBits/R/Condor/validateModel.R
+ValidateLinux:
+		R --slave < /home/neil/Dropbox/CodeBits/R/Condor/validateModel.R
+EditRCode:
+	OSX:
+		EDIT /Users/neil/Dropbox/CodeBits/R/Condor/validateModel.R
+	Linux:
+		EDIT /home/neil/Dropbox/CodeBits/R/Condor/validateModel.R
+DeleteModelFitAllRuns:
+	rm -rf ModelFitAllRuns.csv
+Analysis:
+	NBRatio:
+		ipython -pylab -nomessages -quick -noconfirm_exit -nobanner NBRatio.py
+	NodeBranchRatioHisto:
+		gnome-terminal -x ipython  -pylab -q4thread branchNodeRatio.py
+	NodeLength:
+		gnome-terminal -x ipython -pylab -q4thread NodeLength.py
+	Pitch:
+		ipython -pylab -q4thread -nomessages -quick -noconfirm_exit -nobanner pitch.py
+L-system:
+	EDIT lsystem.l
+startup:
+	EDIT startup.hpp
+TreeReader:
+	EDIT TreeReader.l
+Env:
+	EDIT env.hpp
+datastructure
+	EDIT datastruc.inc
+extra:
+	EDIT extra.hpp
+MTGWriter:
+	EDIT MTGWriter.hpp
+mapBranches:
+	EDIT mapBranches.hpp
+python:
+	branchNodeRatio.py:
+		EDIT branchNodeRatio.py
+	NodeLength.py:
+		EDIT NodeLength.py
+	pitch.py:
+		EDIT pitch.py
+	NBRatio.py:
+		EDIT NBRatio.py
+	NumberofBranchesDef.py:
+		EDIT NumberofBranchesDef.py
+	ParentOfNode.py:
+		EDIT ParentOfNode.py
+surface:
+	leafA268:
+		bezieredit leafA268.s
+	leaf8741:
+		bezieredit leaf741.s
+	leaf816:
+		bezieredit leaf816.s
+	leaf842:
+		bezieredit leaf842.s
+viewfile:
+	EDIT view.v
+animation:
+	EDIT anim.a
+description:
+	TEXT description.txt
+materials:
+	MEDIT material.mat

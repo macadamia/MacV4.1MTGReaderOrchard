@@ -1,0 +1,29 @@
+	SELF ORGANIZING TREE MODELS FOR IMAGE SYNTHESIS
+	
+	Wojciech Palubicki, Kipp Horel, Steven Longay, Adam Runions,
+	Brendan Lane, Radomir Mech, Przemyslaw Prusinkiewicz
+
+	DEMO PROGRAM #1, Self-organizing growth in light environment
+	Kipp Horel, April 29, 2009.
+
+	Copyrights (C) 2009 by the authors.
+
+	This model is designed to work with the L-system-based modeling program L-studio,
+        which can be donwloaded from http://www.algorithmicbotany.org
+
+	The following demonstration code uses a simple light environment class to grow a single tree,
+	with internal controls via an extended Borchart & Honda style resource system.
+
+	
+
+
+#############
+This version has extra set to generate a list of XYZ for use by fdim (R)
+This version takes over from SelfOrg20101017XYZMTGV3
+Includes a Leaf module and the code to make that work
+#define PHYLLOANGLE 137.5 is now hardcoded as 137.5 as I can't think of reason to change it 23 June 2011
+Version 4.1 decouples the supply of light from leaves and the demand for resources by the buds
+Includes a MTG reader to build a plant first, replaces Seed
+
+The new branches are glued back onto the node that started the branching, rather than the redigitisation of the starting node
+
